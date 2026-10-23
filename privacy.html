@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/privacy.html">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF4DD">
+<meta name="theme-color" content="#FBF6EC">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="不气了 Unmad">
 <meta property="og:title" content="隐私政策 · 不气了 Unmad">
@@ -23,223 +23,159 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-:root {
-  --cream: #FFF4DD;
-  --paper: #FFFCF4;
-  --ink: #21180F;
-  --muted: #6B5B48;
-  --orange: #FF9D2E;
-  --red: #EF4136;
-  --line: #21180F;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--ink);
-  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-        "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-.wrap { max-width: 680px; margin: 0 auto; padding: 24px 20px 72px; }
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px; margin-bottom: 30px;
-}
-.mark {
-  display: inline-block; padding: 6px 14px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--orange); font-weight: 800; letter-spacing: .02em;
-  box-shadow: 3px 3px 0 var(--line); text-decoration: none;
-}
-.mark:hover { color: var(--ink); }
-.topbar nav { display: flex; gap: 18px; font-size: 14px; }
-.topbar nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
-.topbar nav a:hover { color: var(--red); text-decoration: underline; }
-header.page { margin-bottom: 28px; }
-h1 { font-size: 28px; font-weight: 800; margin: 0 0 6px; letter-spacing: -.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-main {
-  background: var(--paper); border: 2.5px solid var(--line); border-radius: 18px;
-  padding: 28px 24px; box-shadow: 5px 5px 0 var(--line);
-}
-h2 { font-size: 18px; font-weight: 800; margin: 30px 0 8px; }
-h2:first-child { margin-top: 0; }
-p { margin: 0 0 14px; }
-ul { margin: 0 0 14px; padding-left: 22px; }
-li { margin-bottom: 6px; }
-a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { color: var(--red); }
-hr { border: 0; border-top: 2px dashed rgba(33,24,15,.25); margin: 30px 0; }
-.en { color: var(--muted); font-size: 14px; }
-.lead {
-  background: var(--cream); border: 2px solid var(--line); border-radius: 14px;
-  padding: 16px 18px; margin: 0 0 8px;
-}
-.lead p:last-child { margin-bottom: 0; }
-.tablewrap { overflow-x: auto; margin: 0 0 14px; }
-table { border-collapse: collapse; width: 100%; font-size: 14px; }
-th, td { border: 2px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
-th { background: var(--cream); font-weight: 800; }
-td.no { white-space: nowrap; font-weight: 700; }
-footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; }
-footer p:last-child { margin-bottom: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; }
-.beian { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: center; }
-.beian a { color: var(--muted); text-decoration: none; }
-.beian a:hover { color: var(--red); text-decoration: underline; }
-code { background: var(--cream); padding: 2px 6px; border-radius: 5px; font-size: .92em; }
-@media (max-width: 480px) {
-  .wrap { padding: 20px 14px 56px; }
-  main { padding: 22px 18px; box-shadow: 4px 4px 0 var(--line); }
-  h1 { font-size: 24px; }
-}
-</style>
+<link rel="preload" href="assets/fonts/noto-sc-900.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/unmad.css?v=1">
+<script src="assets/fx.js?v=1" defer></script>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="topbar">
-    <a class="mark" href="./">不气了 · Unmad</a>
-    <nav>
-      <a href="./">首页</a>
-      <a href="support.html">使用与支持</a>
-      <a href="en/privacy.html" hreflang="en" lang="en">English</a>
-    </nav>
-  </header>
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="不气了 Unmad 首页"><img src="assets/wordmark.png" width="78" height="26" alt="不气了"><span>UNMAD</span></a>
+  <nav class="nav-links" aria-label="网站导航">
+    <a href="./#room">砸砸屋</a>
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="privacy.html" aria-current="page">隐私</a>
+    <a href="support.html">帮助</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="en/privacy.html" hreflang="en" lang="en">EN ↗</a>
+    <a class="get" href="https://apps.apple.com/cn/app/id6809241933">获取 App ↗</a>
+  </div>
+</header>
 
-  <header class="page">
-    <h1>隐私政策</h1>
-    <p class="sub">生效日期：2026 年 9 月 · 最后更新：2026 年 10 月 · 适用版本 v1.2.0 及更早版本</p>
-  </header>
+<header class="phead wrap">
+  <p class="tag"><span class="dia">◆</span>隐私政策<span class="sep">/</span>Privacy</p>
+  <h1>隐私政策</h1>
+  <p class="sub">更新日期：2026 年 10 月 11 日 · 生效日期：2026 年 10 月 11 日 · 适用于 iOS 版和安卓版 v1.2.0 及更早版本</p>
+</header>
 
-  <main>
-    <div class="lead">
-      <p><b>一句话版本：</b>不气了不需要账号。你在 App 里写的字、报的怒气分数、冷静箱里的话，除了你自己点分享发出去的，都不会离开你的手机。从 1.2.0 起，唯一会发出去的是每天一小包匿名的使用统计（比如「砸碎这破事开始 2 次」），不带你写的任何字，也认不出你是谁。不收集任何个人信息。</p>
-    </div>
+<main class="doc wrap">
+<div class="sheet">
+<div class="lead">
+    <p><b>一句话版本：</b>不气了不需要账号。你在 App 里写的字、报的怒气分数、冷静箱里的话，除了你自己点分享发出去的，都不会离开你的手机。从 1.2.0 起，唯一会发出去的是每天一小包匿名的使用统计（比如「砸碎这破事开始 2 次」），不带你写的任何字，也认不出你是谁。不收集任何个人信息。</p>
+  </div>
 
-    <h2>谁在运营</h2>
-    <ul>
-      <li>开发者（个人信息处理者）：Yuan Zhao（个人开发者）</li>
-      <li>App 名称：不气了（Unmad）　·　标识：<code>co.unmad.app</code></li>
-      <li>联系邮箱：<a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></li>
-    </ul>
+  <h2>谁在运营</h2>
+  <ul>
+    <li>开发者（个人信息处理者）：赵元（Yuan Zhao，个人开发者）</li>
+    <li>App 名称：不气了（Unmad）　·　标识：<code>co.unmad.app</code></li>
+    <li>联系邮箱：<a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></li>
+  </ul>
 
-    <h2>我们处理哪些个人信息</h2>
-    <p>不处理个人信息。不气了<b>不收集、不存储、不使用、不共享、不转让、不公开披露</b>你的任何个人信息。下面「匿名使用统计」那一节说的次数，没有设备编号、账号或你写的内容，一包和另一包连不起来，无法识别到任何人，属于匿名化信息。这些统计存放在中国境内（阿里云北京），不存在向境外提供的情形。</p>
-    <p>不需要注册，不需要登录，不需要手机号、邮箱、微信或任何第三方账号。打开就能用。</p>
+  <h2>我们处理哪些个人信息</h2>
+  <p>不处理个人信息。不气了<b>不收集、不存储、不使用、不共享、不转让、不公开披露</b>你的任何个人信息。下面「匿名使用统计」那一节说的次数，没有设备编号、账号或你写的内容，一包和另一包连不起来，无法识别到任何人，属于匿名化信息。这些统计存放在中国境内（阿里云北京），不存在向境外提供的情形。</p>
+  <p>不需要注册，不需要登录，不需要手机号、邮箱、微信或任何第三方账号。打开就能用。</p>
 
-    <h2>你写的不上传</h2>
-    <p>没有登录，没有云同步，没有广告 SDK，没有第三方分析工具，没有崩溃上报，没有推送。你写的字、报的分数，App 不会自己发出这台设备。</p>
-    <p>它用到的第三方开源组件（React Native 和 Expo 的基础模块、把那一页截成图的 react-native-view-shot、调起系统评分弹窗的 expo-store-review）只用来画界面、存在本机、放音效和震动、生成你要分享的图、弹出评分，不含任何会联网上传的能力。不气了没有接入任何广告、统计、崩溃上报类的第三方 SDK；下面的匿名统计是不气了自己写的，只发到不气了自己的服务器。</p>
+  <h2>你写的不上传</h2>
+  <p>没有登录，没有云同步，没有广告 SDK，没有第三方分析工具，没有崩溃上报，没有推送。你写的字、报的分数，App 不会自己发出这台设备。</p>
+  <p>它用到的第三方开源组件（React Native 和 Expo 的基础模块、把那一页截成图的 react-native-view-shot、在 iPhone 上调起系统评分弹窗的 expo-store-review、在安卓上把图交给分享面板的 expo-sharing）只用来画界面、存在本机、放音效和震动、生成和分享你要发的图、弹出评分，不含任何会联网上传的能力。不气了没有接入任何广告、统计、崩溃上报类的第三方 SDK；下面的匿名统计是不气了自己写的，只发到不气了自己的服务器。</p>
 
-    <h2>匿名使用统计</h2>
-    <p>从 1.2.0 起，为了知道大家用了哪些功能、在哪儿卡住，不气了每天会发一小包匿名的次数到自己的服务器（unmad.cn），比如「打开了 3 次，其中 1 次在晚上 11 点以后」「撕掉标签开始 2 次、做完 1 次」「打开专员图鉴 1 次」，外加日期、版本号、界面语言、默认版还是哄她版、音效和震动这几个开关开没开、大概装了多久（只分「当天、一周内、一个月内、一个月以上、1.2.0 之前就装了」几档）。1.1.0 及更早的版本不发任何东西。</p>
-    <ul>
-      <li><b>不在里面的</b>：你写的每一个字、冷静箱、怒气账单、怒气分数、设备编号、账号、广告标识符、位置。</li>
-      <li><b>服务器怎么存</b>：收到一包就加进按天的总数里，这一包本身不保留；不记录 IP 地址。所以库里只有「某天有多少台手机砸了几次」这种合计，找不回任何一台手机。</li>
-      <li><b>什么时候发</b>：当天攒着，过了这天、下一次做完一轮回到首页时发走；发不出去（比如没网）当天就不再试，留着以后再发，最多留两周。「清除全部本地数据」会把还没发走的一起删掉。</li>
-    </ul>
+  <h2>匿名使用统计</h2>
+  <p>从 1.2.0 起，为了知道大家用了哪些功能、在哪儿卡住，不气了每天会发一小包匿名的次数到自己的服务器（unmad.cn），比如「打开了 3 次，其中 1 次在晚上 11 点以后」「撕掉标签开始 2 次、做完 1 次」「打开专员图鉴 1 次」，外加日期、版本号、界面语言、默认版还是哄她版、音效和震动这几个开关开没开、大概装了多久（只分「当天、一周内、一个月内、一个月以上、1.2.0 之前就装了」几档）。1.1.0 及更早的版本不发任何东西。</p>
+  <ul>
+    <li><b>不在里面的</b>：你写的每一个字、冷静箱、怒气账单、怒气分数、设备编号、账号、广告标识符、位置。</li>
+    <li><b>服务器怎么存</b>：收到一包就加进按天的总数里，这一包本身不保留；不记录 IP 地址。所以库里只有「某天有多少台手机砸了几次」这种合计，找不回任何一台手机。</li>
+    <li><b>什么时候发</b>：当天攒着，过了这天、下一次做完一轮回到首页时发走；发不出去（比如没网）当天就不再试，留着以后再发，最多留两周。「清除全部本地数据」会把还没发走的一起删掉。</li>
+  </ul>
 
-    <h2>存在你本机的东西</h2>
-    <ul>
-      <li>消气记录与冷静记录：时间、你自己报的怒气值、玩过哪些活动</li>
-      <li>你写下的心情记录，以及（如果你用了可选的冷静箱）冻在里面的那些话</li>
-      <li>怒气账单：给某一轮消气补记的「犯了什么事」，和你补的那一句</li>
-      <li>「砸碎这破事」的破事库里，你写下的那几句</li>
-      <li>写到一半、还没存下的那段话</li>
-      <li>测验测出来的结果，以及没答完的那份答卷</li>
-      <li>哪几天点过「今天没人惹我」，撞见过哪些隐藏款</li>
-      <li>你的版本选择、音效与震动开关等偏好</li>
-      <li>还没发走的匿名使用次数（见上一节）</li>
-    </ul>
-    <p>全部存在这台设备的本地存储（iOS 沙盒）里，不同步、不另外备份；你的记录和写下的字也不上传。这些内容我们看不到，也没有任何后台可以看到。</p>
+  <h2>存在你本机的东西</h2>
+  <ul>
+    <li>消气记录与冷静记录：时间、你自己报的怒气值、玩过哪些活动</li>
+    <li>你写下的心情记录，以及（如果你用了可选的冷静箱）冻在里面的那些话</li>
+    <li>怒气账单：给某一轮消气补记的「犯了什么事」，和你补的那一句</li>
+    <li>「砸碎这破事」的破事库里，你写下的那几句</li>
+    <li>写到一半、还没存下的那段话</li>
+    <li>测验测出来的结果，以及没答完的那份答卷</li>
+    <li>哪几天点过「今天没人惹我」，撞见过哪些隐藏款</li>
+    <li>你的版本选择、音效与震动开关等偏好</li>
+    <li>（安卓版）你哪天点过这份政策的「同意」</li>
+    <li>还没发走的匿名使用次数（见上一节）</li>
+  </ul>
+  <p>全部存在这台设备的本地存储（iOS 沙盒、安卓的应用私有目录）里，不同步、不另外备份；你的记录和写下的字也不上传。这些内容我们看不到，也没有任何后台可以看到。</p>
 
-    <h2>分享</h2>
-    <p>测验结果、怒气账单月报和月底奖状可以存成一张图，交给手机自己的分享面板，存进相册还是发给谁，都由你在那里决定。只有你点了那颗按钮才会生成这张图；图上只有那一页上印着的内容，<b>没有你写下的原话</b>。生成用的临时文件发完就删，不气了自己什么都不发。</p>
+  <h2>分享</h2>
+  <p>测验结果、怒气账单月报和月底奖状可以存成一张图，交给手机自己的分享面板，发给谁、存到哪儿，都由你在那里决定。只有你点了那颗按钮才会生成这张图；图上只有那一页上印着的内容，<b>没有你写下的原话</b>。生成用的临时文件发完就删，不气了自己什么都不发。</p>
 
-    <h2>备份</h2>
-    <p>不气了给自己的存储目录打了「不进备份」的标记，所以 iPhone 的整机备份（iCloud 或电脑备份）不会把这些记录带走。换手机、从备份恢复，它们都不会跟过去；不气了自己也没有留副本。</p>
+  <h2>备份</h2>
+  <p>iPhone 上，不气了给自己的存储目录打了「不进备份」的标记，所以整机备份（iCloud 或电脑备份）不会把这些记录带走，换手机、从备份恢复，它们都不会跟过去。</p>
+  <p>安卓上，不气了关掉了应用数据备份，系统的云备份不会带上这些记录。换机工具和各家手机自带的备份做法不一，有的会连 App 数据一起搬到新手机上；那一步由手机完成，不经过不气了。</p>
+  <p>不管哪边，不气了自己都没有留副本。</p>
 
-    <h2>系统权限与设备信息</h2>
-    <p>不气了安装后<b>不会弹出任何权限请求</b>。唯一可能出现的一次，是你在分享面板里第一次点「存储图像」时，系统问能不能把这张图添加到照片——只能往里存，读不到你相册里的任何东西。</p>
-    <div class="tablewrap"><table>
-      <tr><th>权限 / 信息</th><th>是否使用</th><th>说明</th></tr>
-      <tr><td>位置</td><td class="no">否</td><td>不申请、不读取，任何精度都没有</td></tr>
-      <tr><td>麦克风 / 录音</td><td class="no">否</td><td>只播放音效，从不录音</td></tr>
-      <tr><td>摄像头</td><td class="no">否</td><td>不拍照</td></tr>
-      <tr><td>相册</td><td class="no">仅添加</td><td>只有你在分享面板里点「存储图像」时，把那张图存进去。<b>从不读取相册</b>，也不上传图片。</td></tr>
-      <tr><td>通讯录 / 通话记录 / 短信</td><td class="no">否</td><td>不读取，也没有联系人功能</td></tr>
-      <tr><td>剪贴板</td><td class="no">仅写入</td><td>只有你自己点「复制」时，把你写的那段话写进剪贴板，方便你粘到别处。<b>从不读取剪贴板内容。</b></td></tr>
-      <tr><td>通知 / 推送</td><td class="no">否</td><td>不申请通知权限，不推送消息</td></tr>
-      <tr><td>设备标识（IDFA / IMEI 等）</td><td class="no">否</td><td>不读取、不生成、不上报，不做任何广告追踪</td></tr>
-      <tr><td>应用列表 / 传感器 / 蓝牙 / Wi-Fi 信息</td><td class="no">否</td><td>不读取</td></tr>
-      <tr><td>震动</td><td class="no">是</td><td>系统震动反馈，可在「我的」里关掉，不涉及任何信息</td></tr>
-    </table></div>
+  <h2>系统权限与设备信息</h2>
+  <p>不气了安装后<b>不会弹出任何权限请求</b>。iPhone 上唯一可能出现的一次，是你在分享面板里第一次点「存储图像」时，系统问能不能把这张图添加到照片——只能往里存，读不到你相册里的任何东西。安卓版只用到联网（发上面那包匿名统计）、查看网络状态、震动、调节音量这几项不弹窗的普通权限，相册、存储、位置、麦克风、摄像头、通讯录、电话、通知一项都不申请。</p>
+  <div class="tablewrap"><table>
+    <tr><th>权限 / 信息</th><th>是否使用</th><th>说明</th></tr>
+    <tr><td>位置</td><td class="no">否</td><td>不申请、不读取，任何精度都没有</td></tr>
+    <tr><td>麦克风 / 录音</td><td class="no">否</td><td>只播放音效，从不录音</td></tr>
+    <tr><td>摄像头</td><td class="no">否</td><td>不拍照</td></tr>
+    <tr><td>相册</td><td class="no">仅添加</td><td>iPhone 上只有你在分享面板里点「存储图像」时，把那张图存进去；安卓版不申请相册和存储权限。<b>从不读取相册</b>，也不上传图片。</td></tr>
+    <tr><td>通讯录 / 通话记录 / 短信</td><td class="no">否</td><td>不读取，也没有联系人功能</td></tr>
+    <tr><td>剪贴板</td><td class="no">仅写入</td><td>只有你自己点「复制」时，把你写的那段话写进剪贴板，方便你粘到别处。<b>从不读取剪贴板内容。</b></td></tr>
+    <tr><td>通知 / 推送</td><td class="no">否</td><td>不申请通知权限，不推送消息</td></tr>
+    <tr><td>设备标识（IDFA / IMEI / Android ID / OAID 等）</td><td class="no">否</td><td>不读取、不生成、不上报，不做任何广告追踪</td></tr>
+    <tr><td>应用列表 / 传感器 / 蓝牙 / Wi-Fi 信息</td><td class="no">否</td><td>不读取</td></tr>
+    <tr><td>震动</td><td class="no">是</td><td>系统震动反馈，可在「我的」里关掉，不涉及任何信息</td></tr>
+  </table></div>
 
-    <h2>不碰的东西</h2>
-    <p>你写下的话只显示给你自己看。不气了没有发送功能，任何一句都不会被替你发出去。能分享的只有测验结果、怒气账单月报和月底奖状这几张图，而且只在你自己点了之后，图上也没有你写下的原话。冷静箱到点之后，也只是把这段话再拿给你自己看一遍，由你决定发不发。</p>
+  <h2>不碰的东西</h2>
+  <p>你写下的话只显示给你自己看。不气了没有发送功能，任何一句都不会被替你发出去。能分享的只有测验结果、怒气账单月报和月底奖状这几张图，而且只在你自己点了之后，图上也没有你写下的原话。冷静箱到点之后，也只是把这段话再拿给你自己看一遍，由你决定发不发。</p>
 
-    <h2>你的权利</h2>
-    <p>因为这些内容只存在你自己的设备上，你对它们是完全控制的，不用向我们申请，也不需要我们配合：</p>
-    <ul>
-      <li><b>查阅、复制</b>：在「消气日历」里翻看每一条；需要带走某一段，可以自己复制</li>
-      <li><b>更正</b>：写下的内容可以随时编辑</li>
-      <li><b>删除</b>：见下一节，逐条删或者一次清空都行</li>
-      <li><b>撤回同意</b>：不气了不收集个人信息，没有需要你授权或撤回的东西。匿名使用统计认不出是谁的，没法、也不需要按人删除；删掉 App 就不再发送</li>
-    </ul>
-    <p>如果你对这份政策本身有疑问或投诉，写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>，我们会在 15 个工作日内回复。</p>
+  <h2>你的权利</h2>
+  <p>因为这些内容只存在你自己的设备上，你对它们是完全控制的，不用向我们申请，也不需要我们配合：</p>
+  <ul>
+    <li><b>查阅、复制</b>：在「消气日历」里翻看每一条；需要带走某一段，可以自己复制</li>
+    <li><b>更正</b>：写下的内容可以随时编辑</li>
+    <li><b>删除</b>：见下一节，逐条删或者一次清空都行</li>
+    <li><b>撤回同意</b>：不气了不收集个人信息。安卓版第一次打开时会请你看过这份政策的要点、点「同意」再用；想撤回，删掉 App 即可。匿名使用统计认不出是谁的，没法、也不需要按人删除；删掉 App 就不再发送</li>
+  </ul>
+  <p>如果你对这份政策本身有疑问或投诉，写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>，我们会在 15 个工作日内回复。</p>
 
-    <h2>删除</h2>
-    <ul>
-      <li>你写下的每一条都能单独彻底删除</li>
-      <li>「我的 → 清空所有记录」删掉全部记录，保留设置</li>
-      <li>「我的 → 清除全部本地数据」连设置一起删</li>
-      <li>把 App 从手机上删掉，这些数据也随之消失</li>
-    </ul>
-    <p>选了「彻底删除」的内容不会被偷偷留着。</p>
+  <h2>删除</h2>
+  <ul>
+    <li>你写下的每一条都能单独彻底删除</li>
+    <li>「我的 → 清空所有记录」删掉全部记录，保留设置</li>
+    <li>「我的 → 清除全部本地数据」连设置一起删</li>
+    <li>把 App 从手机上删掉，这些数据也随之消失</li>
+  </ul>
+  <p>选了「彻底删除」的内容不会被偷偷留着。</p>
 
-    <h2>未成年人</h2>
-    <p>不气了不面向不满 14 周岁的儿童，也不会有意收集他们的信息。由于本 App 不收集任何个人信息，服务器上只有认不出任何人的合计，无论使用者是谁，都不存在需要按人删除的记录。如果你是未成年人的监护人，对孩子使用本 App 有疑问，可以来信联系我们。</p>
+  <h2>未成年人</h2>
+  <p>不气了不面向不满 14 周岁的儿童，也不会有意收集他们的信息。由于本 App 不收集任何个人信息，服务器上只有认不出任何人的合计，无论使用者是谁，都不存在需要按人删除的记录。如果你是未成年人的监护人，对孩子使用本 App 有疑问，可以来信联系我们。</p>
 
-    <h2>这不是医疗服务</h2>
-    <p>不气了不做心理测评、不做诊断、不提供治疗，也不属于医疗器械或互联网诊疗服务。如果你需要专业帮助，请联系专业人士；如果你有伤害自己的念头，请立即联系当地的紧急服务或心理危机热线。</p>
+  <h2>这不是医疗服务</h2>
+  <p>不气了不做心理测评、不做诊断、不提供治疗，也不属于医疗器械或互联网诊疗服务。如果你需要专业帮助，请联系专业人士；如果你有伤害自己的念头，请立即联系当地的紧急服务或心理危机热线。</p>
 
-    <h2>政策变更</h2>
-    <p>以后的版本如果改变了会离开设备的东西，这一页会在那个版本发布时同步更新。这一页的顶部始终标着生效日期和适用版本。</p>
+  <h2>政策变更</h2>
+  <p>以后的版本如果改变了会离开设备的东西，这一页会在那个版本发布时同步更新。这一页的顶部始终标着生效日期和适用版本。</p>
 
-    <h2>联系</h2>
-    <p>有问题写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>。</p>
+  <h2>联系</h2>
+  <p>有问题写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>。</p>
 
-    <hr>
+  <hr>
 
-    <h2 class="en">English</h2>
-    <p class="en">A full English version of this policy is at <a href="en/privacy.html" hreflang="en" lang="en">Privacy policy (English)</a>.</p>
-    <p class="en">Unmad (不气了) collects no personal information and needs no account. Everything you write or do (rescue history, held drafts, preferences) is stored only in the app’s local sandbox on your device and is deleted when you delete the app. Starting with version 1.2.0, the app sends one small daily batch of anonymous usage counts (no device ID, no account, nothing you wrote) to its own server at unmad.cn, which keeps only daily totals and does not log IP addresses. The app asks for no permissions when installed: no contacts, location, microphone, or camera, and it never reads the clipboard or your photos. It has no sending or messaging capability. Quiz results, the monthly rage receipt and the month-end award can be saved as an image through your phone’s share sheet, only when you tap to do so and without anything you wrote; choosing “Save Image” there asks once for add-only access to Photos. The app marks its own storage as excluded from backup, so a full iPhone backup (iCloud or computer) does not carry this data either. Questions: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
-  </main>
-
-  <footer>
-    <p class="footer-links">
-      <a href="./">不气了 Unmad</a>
-      <a href="https://apps.apple.com/cn/app/id6809241933">App Store 下载</a>
-      <a href="support.html">使用与支持</a>
-      <a href="terms.html">使用条款</a>
-      <a href="en/privacy.html" hreflang="en" lang="en">English</a>
-    </p>
-    <p>联系：<a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p>
-    <!-- ICP 备案号 2026-09-20 下发，已展示。号码从工信部系统复制，ICP 和数字都是半角。 -->
-    <p class="beian">
-      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
-    </p>
-    <!-- 公网安备是另一张批文（公安联网备案），ICP 下来之后才去办，下发前同样不得展示。
-         拿到之后把下面这行挪进上面那个 <p class="beian"> 里，号码同样从公安备案系统【复制】。
-      <a href="https://beian.mps.gov.cn" target="_blank" rel="noopener">▢公网安备 ▢▢▢▢▢▢▢▢▢▢▢▢▢▢号</a>
-    -->
-    <p>© 2026 Yuan Zhao</p>
-  </footer>
-
+  <h2 class="en">English</h2>
+  <p class="en">A full English version of this policy is at <a href="en/privacy.html" hreflang="en" lang="en">Privacy policy (English)</a>.</p>
+  <p class="en">Unmad (不气了) collects no personal information and needs no account. Everything you write or do (rescue history, held drafts, preferences) is stored only in the app’s private storage on your device and is deleted when you delete the app. Starting with version 1.2.0, the app sends one small daily batch of anonymous usage counts (no device ID, no account, nothing you wrote) to its own server at unmad.cn, which keeps only daily totals and does not log IP addresses. The app asks for no permissions when installed: no contacts, location, microphone, or camera, and it never reads the clipboard or your photos. It has no sending or messaging capability. Quiz results, the monthly rage receipt and the month-end award can be saved as an image through your phone’s share sheet, only when you tap to do so and without anything you wrote; on iPhone, choosing “Save Image” there asks once for add-only access to Photos, and the Android version asks for no photo or storage permission at all. On iPhone the app’s storage is excluded from backup, so a full iPhone backup (iCloud or computer) does not carry this data; on Android, app-data backup is turned off, though some phone-transfer tools may still move app data to a new phone. Questions: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
 </div>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="页脚">
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="support.html">使用与支持</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="terms.html">使用条款</a>
+    <a href="en/privacy.html" hreflang="en" lang="en">English</a>
+  </nav>
+  <div class="foot-meta">
+    <span>联系 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
+    <!-- 公安联网备案号下发后加在这里，下发前不得展示（README「已知还没做的」）。 -->
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/changelog.html">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF4DD">
+<meta name="theme-color" content="#FBF6EC">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Unmad">
 <meta property="og:title" content="What’s new · Unmad">
@@ -23,186 +23,102 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-:root {
-  --cream: #FFF4DD;
-  --paper: #FFFCF4;
-  --ink: #21180F;
-  --muted: #6B5B48;
-  --orange: #FF9D2E;
-  --red: #EF4136;
-  --yellow: #FFD84D;
-  --line: #21180F;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--ink);
-  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-        Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-.wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 72px; }
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px; margin-bottom: 30px;
-}
-.mark {
-  display: inline-block; padding: 6px 14px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--orange); font-weight: 800; letter-spacing: .02em;
-  box-shadow: 3px 3px 0 var(--line); color: var(--ink); text-decoration: none;
-}
-.mark:hover { color: var(--ink); }
-.topbar nav { display: flex; gap: 18px; font-size: 14px; }
-.topbar nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
-.topbar nav a:hover { color: var(--red); text-decoration: underline; }
-header.page { margin-bottom: 28px; }
-h1 { font-size: 28px; font-weight: 800; margin: 0 0 6px; letter-spacing: -.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-main {
-  background: var(--paper); border: 2.5px solid var(--line); border-radius: 18px;
-  padding: 28px 24px; box-shadow: 5px 5px 0 var(--line);
-}
-h2 { font-size: 20px; font-weight: 800; margin: 36px 0 4px; }
-h2:first-child { margin-top: 0; }
-h3 { font-size: 16px; font-weight: 800; margin: 0 0 4px; line-height: 1.4; }
-p { margin: 0 0 14px; }
-ul { margin: 0 0 14px; padding-left: 22px; }
-li { margin-bottom: 6px; }
-a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { color: var(--red); }
-hr { border: 0; border-top: 2px dashed rgba(33,24,15,.25); margin: 30px 0; }
-.section-sub { color: var(--muted); margin-bottom: 16px; }
-.new {
-  display: inline-block; margin-left: 6px; padding: 0 7px; border: 1.5px solid var(--line);
-  border-radius: 999px; background: var(--yellow); font-size: 11px; font-weight: 800;
-  line-height: 18px; vertical-align: 2px; white-space: nowrap;
-}
-.games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 16px; margin-bottom: 8px; }
-.game img, .comfort img {
-  display: block; width: 100%; height: auto; border: 2px solid var(--line); border-radius: 16px;
-  background: var(--cream); margin-bottom: 10px;
-}
-.game .line { font-weight: 600; margin-bottom: 4px; font-size: 15px; line-height: 1.55; }
-.game .how { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0; }
-.comfort { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; align-items: start; }
-.modes { list-style: none; padding: 0; margin: 0; }
-.modes li { padding: 9px 0; border-bottom: 1.5px dashed rgba(33,24,15,.2); margin: 0; }
-.modes li:last-child { border-bottom: 0; }
-.modes b { display: block; }
-.modes span { color: var(--muted); font-size: 14px; }
-.more h3 { margin-top: 18px; }
-.release { margin-top: 30px; }
-.release:first-child { margin-top: 0; }
-.release h2 { margin: 0 0 2px; }
-.when { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
-.release ul { padding-left: 0; list-style: none; }
-.release li { margin-bottom: 10px; }
-.release li b { display: block; }
-.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0; }
-.store {
-  display: inline-block; padding: 10px 20px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--yellow); color: var(--ink);
-  font-weight: 800; font-size: 15px; box-shadow: 4px 4px 0 var(--line);
-  text-decoration: none;
-}
-.store:hover {
-  background: var(--orange); color: var(--ink);
-  transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--line);
-}
-.cta-note { font-size: 13px; color: var(--muted); }
-footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; }
-footer p:last-child { margin-bottom: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; }
-.beian { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: center; }
-.beian a { color: var(--muted); text-decoration: none; }
-.beian a:hover { color: var(--red); text-decoration: underline; }
-@media (max-width: 640px) {
-  .games { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
-}
-@media (max-width: 480px) {
-  .wrap { padding: 20px 14px 56px; }
-  main { padding: 22px 16px; box-shadow: 4px 4px 0 var(--line); }
-  h1 { font-size: 24px; }
-  .comfort { grid-template-columns: 1fr; }
-  .comfort img { max-width: 220px; }
-}
-</style>
+<link rel="stylesheet" href="../assets/unmad.css?v=1">
+<script src="../assets/fx.js?v=1" defer></script>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="topbar">
-    <a class="mark" href="./">Unmad</a>
-    <nav>
-      <a href="./">Home</a>
-      <a href="features.html">Games</a>
-      <a href="../changelog.html" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-    </nav>
-  </header>
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="Unmad home"><b>UN<i>MAD</i></b><span>不气了</span></a>
+  <nav class="nav-links" aria-label="Site">
+    <a href="./#room">Smash Room</a>
+    <a href="features.html">Games</a>
+    <a href="changelog.html" aria-current="page">What’s new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Help</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="../changelog.html" hreflang="zh-Hans" lang="zh-Hans">中文 ↗</a>
+    <a class="get" href="https://apps.apple.com/app/id6809241933">Get the app ↗</a>
+  </div>
+</header>
 
-  <header class="page">
-    <h1>What’s new</h1>
-    <p class="sub">What each version added, newest first</p>
-  </header>
+<header class="phead wrap">
+  <p class="tag"><span class="dia">◆</span>Unmad<span class="sep">/</span>Changelog</p>
+  <h1>What’s new</h1>
+  <p class="sub">What each version added, newest first</p>
+</header>
 
-  <main>
-    <section class="release">
-      <h2>1.2.0</h2>
-      <p class="when">Coming soon</p>
-      <ul>
-        <li><b>Two new games</b>Rip the Labels: every label they slapped on you, ripped off by hand. Squish It: press it, pinch it, and switch between five textures.</li>
-        <li><b>Slice the Noise</b>The pieces can take another cut.</li>
-        <li><b>Officer guide</b>Every officer you’ve met, plus holiday stamps and a few secrets.</li>
-        <li><b>Sunny stamps and a month-end award</b>No drama after 6 pm? Put a sunny stamp on your log. Give yourself an award at the end of the month.</li>
-        <li><b>No time limit</b>Turn it on in Me and play as long as you like.</li>
-        <li><b>The quizzes are here in English</b>Anger weather, fight job, attachment style. Just for fun.</li>
-        <li><b>Three new songs in Dance It Off</b></li>
-        <li><b>A few secrets</b>Not saying where.</li>
-        <li><b>Smoother</b>A batch of bug fixes, and a few games feel snappier.</li>
-      </ul>
-    </section>
-    <section class="release">
-      <h2>1.1.0</h2>
-      <p class="when">October 2026</p>
-      <ul>
-        <li><b>Rage receipts</b>When a round’s done, tap “Receipt?” and put the crap on record: what they did, plus a line if you want. It goes on that day in your log, and every month gets its own receipt you can save as an image.</li>
-        <li><b>A new log</b>Every day you bounce back, an officer goes on duty in your log, picked by what got you there. Finish a Let it out or My brain won’t shut up game and you get their stamp.</li>
-        <li><b>New faces</b>The anger slider has a face now, you get a soft landing once you’re under 30, and the Dance captain moves to the beat of each song.</li>
-        <li><b>Sturdier</b>Half-written notes stay put, and your number is saved the moment you report it. If something ever breaks, you get a button back home instead of the app closing on you.</li>
-      </ul>
-    </section>
-    <section class="release">
-      <h2>1.0</h2>
-      <p class="when">September 2026</p>
-      <ul>
-        <li><b>First release</b>Nine cool-down activities, Write it down (with an optional cool-down box), and the cool-down log.</li>
-      </ul>
-    </section>
-
-    <p>Screenshots of every game are on the <a href="features.html">games page</a>.</p>
-    <hr>
-    <p class="cta">
-      <a class="store" href="https://apps.apple.com/app/id6809241933">Download on the App Store</a>
-      <span class="cta-note">Free · No ads · No sign-up · Your words stay on your phone</span>
-    </p>
-  </main>
-
-  <footer>
-    <p class="footer-links">
-      <a href="./">Unmad</a>
-      <a href="support.html">Help &amp; support</a>
-      <a href="privacy.html">Privacy policy</a>
-      <a href="terms.html">Terms of use</a>
-      <a href="../changelog.html" hreflang="zh-Hans" lang="zh-Hans">中文</a>
-    </p>
-    <p>Contact: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p>
-    <p>© 2026 Yuan Zhao</p>
-  </footer>
-
+<main class="wrap">
+<div class="rels">
+<section class="rel">
+<div><h2 class="rel-v">1.3.0</h2><p class="rel-when"><span class="soon">Coming soon</span></p></div>
+<ul>
+<li><b>Smash Room is open</b><span>Smash the thing, pull down, and there’s a whole living room to wreck. Shove the TV, flip the table, sweep the shelf.</span></li>
+<li><b>A train window</b><span>For when you don’t want to hear from anyone, with views from morning to night, spring to winter.</span></li>
+<li><b>Your own lines</b><span>Write your own lines to slice or rip, up to five at a time.</span></li>
+<li><b>Bin That Thought</b><span>Thoughts swell up till the bin burps.</span></li>
+<li><b>Pick your song</b><span>Dance It Off takes requests now.</span></li>
+<li><b>Rip the Labels</b><span>The blob’s covered all the way round now, so spin it and keep ripping.</span></li>
+<li><b>Longer rounds</b><span>Slice the Noise and Rage Bubbles rounds now run 40 seconds.</span></li>
+<li><b>Smoother</b><span>Bug fixes and smoother games.</span></li>
+</ul>
+</section>
+<section class="rel">
+<div><h2 class="rel-v">1.2.1</h2><p class="rel-when">October 2026</p></div>
+<ul>
+<li><b>Slice the Noise</b><span>Two easter eggs are hiding in there. Keep slicing.</span></li>
+<li><b>Smoother</b><span>Bug fixes, and the games feel smoother.</span></li>
+</ul>
+</section>
+<section class="rel">
+<div><h2 class="rel-v">1.2.0</h2><p class="rel-when">October 2026</p></div>
+<ul>
+<li><b>Two new games</b><span>Rip the Labels: every label they slapped on you, ripped off by hand. Squish It: press it, pinch it, and switch between five textures.</span></li>
+<li><b>Slice the Noise</b><span>The pieces can take another cut.</span></li>
+<li><b>Officer guide</b><span>Every officer you’ve met, plus holiday stamps and a few secrets.</span></li>
+<li><b>Sunny stamps and a month-end award</b><span>No drama after 6 pm? Put a sunny stamp on your log. Give yourself an award at the end of the month.</span></li>
+<li><b>No time limit</b><span>Turn it on in Me and play as long as you like.</span></li>
+<li><b>The quizzes are here in English</b><span>Anger weather, fight job, attachment style. Just for fun.</span></li>
+<li><b>Three new songs in Dance It Off</b></li>
+<li><b>A few secrets</b><span>Not saying where.</span></li>
+<li><b>Smoother</b><span>A batch of bug fixes, and a few games feel snappier.</span></li>
+</ul>
+</section>
+<section class="rel">
+<div><h2 class="rel-v">1.1.0</h2><p class="rel-when">October 2026</p></div>
+<ul>
+<li><b>Rage receipts</b><span>When a round’s done, tap “Receipt?” and put the crap on record: what they did, plus a line if you want. It goes on that day in your log, and every month gets its own receipt you can save as an image.</span></li>
+<li><b>A new log</b><span>Every day you bounce back, an officer goes on duty in your log, picked by what got you there. Finish a Let it out or My brain won’t shut up game and you get their stamp.</span></li>
+<li><b>New faces</b><span>The anger slider has a face now, you get a soft landing once you’re under 30, and the Dance captain moves to the beat of each song.</span></li>
+<li><b>Sturdier</b><span>Half-written notes stay put, and your number is saved the moment you report it. If something ever breaks, you get a button back home instead of the app closing on you.</span></li>
+</ul>
+</section>
+<section class="rel">
+<div><h2 class="rel-v">1.0</h2><p class="rel-when">September 2026</p></div>
+<ul>
+<li><b>First release</b><span>Nine cool-down activities, Write it down (with an optional cool-down box), and the cool-down log.</span></li>
+</ul>
+</section>
 </div>
+<p class="after">Screenshots of every game are on the <a href="features.html">games page</a>.</p>
+<div class="sec" style="padding-top:28px"><div class="ctas"><a class="btn" href="https://apps.apple.com/app/id6809241933">Download on the App Store <span aria-hidden="true">↗</span></a><span class="note">Free · No ads · No sign-up · Your words stay on your phone</span></div></div>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="Footer">
+    <a href="features.html">Games</a>
+    <a href="changelog.html">What’s new</a>
+    <a href="support.html">Help &amp; support</a>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="../changelog.html" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
+  <div class="foot-meta">
+    <span>Contact <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>

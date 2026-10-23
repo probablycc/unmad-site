@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/support.html">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF4DD">
+<meta name="theme-color" content="#FBF6EC">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="不气了 Unmad">
 <meta property="og:title" content="使用与支持 · 不气了 Unmad">
@@ -23,153 +23,95 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-:root {
-  --cream: #FFF4DD;
-  --paper: #FFFCF4;
-  --ink: #21180F;
-  --muted: #6B5B48;
-  --orange: #FF9D2E;
-  --red: #EF4136;
-  --line: #21180F;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--ink);
-  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-        "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-.wrap { max-width: 680px; margin: 0 auto; padding: 24px 20px 72px; }
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px; margin-bottom: 30px;
-}
-.mark {
-  display: inline-block; padding: 6px 14px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--orange); font-weight: 800; letter-spacing: .02em;
-  box-shadow: 3px 3px 0 var(--line); text-decoration: none;
-}
-.mark:hover { color: var(--ink); }
-.topbar nav { display: flex; gap: 18px; font-size: 14px; }
-.topbar nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
-.topbar nav a:hover { color: var(--red); text-decoration: underline; }
-header.page { margin-bottom: 28px; }
-h1 { font-size: 28px; font-weight: 800; margin: 0 0 6px; letter-spacing: -.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-main {
-  background: var(--paper); border: 2.5px solid var(--line); border-radius: 18px;
-  padding: 28px 24px; box-shadow: 5px 5px 0 var(--line);
-}
-h2 { font-size: 18px; font-weight: 800; margin: 30px 0 8px; }
-h2:first-child { margin-top: 0; }
-p { margin: 0 0 14px; }
-ul { margin: 0 0 14px; padding-left: 22px; }
-li { margin-bottom: 6px; }
-a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { color: var(--red); }
-hr { border: 0; border-top: 2px dashed rgba(33,24,15,.25); margin: 30px 0; }
-footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; }
-footer p:last-child { margin-bottom: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; }
-.beian { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: center; }
-.beian a { color: var(--muted); text-decoration: none; }
-.beian a:hover { color: var(--red); text-decoration: underline; }
-code { background: var(--cream); padding: 2px 6px; border-radius: 5px; font-size: .92em; }
-@media (max-width: 480px) {
-  .wrap { padding: 20px 14px 56px; }
-  main { padding: 22px 18px; box-shadow: 4px 4px 0 var(--line); }
-  h1 { font-size: 24px; }
-}
-</style>
+<link rel="preload" href="assets/fonts/noto-sc-900.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/unmad.css?v=1">
+<script src="assets/fx.js?v=1" defer></script>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="topbar">
-    <a class="mark" href="./">不气了 · Unmad</a>
-    <nav>
-      <a href="./">首页</a>
-      <a href="privacy.html">隐私政策</a>
-      <a href="en/support.html" hreflang="en" lang="en">English</a>
-    </nav>
-  </header>
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="不气了 Unmad 首页"><img src="assets/wordmark.png" width="78" height="26" alt="不气了"><span>UNMAD</span></a>
+  <nav class="nav-links" aria-label="网站导航">
+    <a href="./#room">砸砸屋</a>
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="privacy.html">隐私</a>
+    <a href="support.html" aria-current="page">帮助</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="en/support.html" hreflang="en" lang="en">EN ↗</a>
+    <a class="get" href="https://apps.apple.com/cn/app/id6809241933">获取 App ↗</a>
+  </div>
+</header>
 
-  <header class="page">
-    <h1>使用与支持</h1>
-    <p class="sub">30 到 90 秒，把自己从气头上捞回来</p>
-  </header>
+<header class="phead wrap">
+  <p class="tag"><span class="dia">◆</span>使用与支持<span class="sep">/</span>Support</p>
+  <h1>使用与支持</h1>
+  <p class="sub">30 到 90 秒，把自己从气头上捞回来</p>
+</header>
 
-  <main>
-    <h2>怎么用</h2>
-    <ul>
-      <li><strong>正在气头上</strong>：首页按「我真的气死了」，报个数，挑一种走法（发泄 / 换个台 / 被哄），玩完再报一次。</li>
-      <li><strong>想把这口气写下来</strong>：首页「写下来 📝」，写完存进日历，以后想翻回来看就翻回来。</li>
-      <li><strong>正要发一条会后悔的消息</strong>：一样从「写下来 📝」进去，写完顺手给它选个冷静时间（5 / 10 / 30 分钟），到点了再决定发不发。这一步是可选的，不选就是一条普通的心情记录。</li>
-      <li><strong>想看自己的战绩</strong>：「我的 → 消气日历」，看这个月你把自己拉回来了几次。</li>
-      <li><strong>想给这次吵架留个底</strong>：玩完再报一次数，在那一屏点「🧾 留个案底」，选他犯了什么事、补一句，存进怒气账单。有了案底，消气日历里就会多出一张这个月的怒气账单：最常被什么点着、一般什么时候炸、靠什么缓过来，能存成图。</li>
-      <li><strong>不气了，想测点好玩的</strong>：首页「不气了？来测点别的 🧪」，或者「我的 → 测点别的」。生气天气、吵架职业、恋爱依恋三个测验，测完能存成图。</li>
-    </ul>
+<main class="doc wrap">
+<div class="sheet">
+<h2>怎么用</h2>
+  <ul>
+    <li><strong>正在气头上</strong>：首页按「我真的气死了」，报个数，挑一种走法（发泄 / 换个台 / 被哄），玩完再报一次。</li>
+    <li><strong>想把这口气写下来</strong>：首页「写下来 📝」，写完存进日历，以后想翻回来看就翻回来。</li>
+    <li><strong>正要发一条会后悔的消息</strong>：一样从「写下来 📝」进去，写完顺手给它选个冷静时间（5 / 10 / 30 分钟），到点了再决定发不发。这一步是可选的，不选就是一条普通的心情记录。</li>
+    <li><strong>想看自己的战绩</strong>：「我的 → 消气日历」，看这个月你把自己拉回来了几次。</li>
+    <li><strong>想给这次吵架留个底</strong>：玩完再报一次数，在那一屏点「🧾 留个案底」，选他犯了什么事、补一句，存进怒气账单。有了案底，消气日历里就会多出一张这个月的怒气账单：最常被什么点着、一般什么时候炸、靠什么缓过来，能存成图。</li>
+    <li><strong>不气了，想测点好玩的</strong>：首页「不气了？来测点别的 🧪」，或者「我的 → 测点别的」。生气天气、吵架职业、恋爱依恋三个测验，测完能存成图。</li>
+  </ul>
 
-    <h2>常见问题</h2>
+  <h2>常见问题</h2>
 
-    <p><strong>在哪儿下载？</strong><br>
-    App Store 搜「不气了」就有，也可以<a href="https://apps.apple.com/cn/app/id6809241933">直接打开下载页</a>。</p>
+  <p><strong>在哪儿下载？</strong><br>
+  App Store 搜「不气了」就有，也可以<a href="https://apps.apple.com/cn/app/id6809241933">直接打开下载页</a>。</p>
 
-    <p><strong>要花钱吗？</strong><br>
-    免费。没有内购，没有订阅，没有广告。</p>
+  <p><strong>要花钱吗？</strong><br>
+  免费。没有内购，没有订阅，没有广告。</p>
 
-    <p><strong>我的数据会传到哪里去？</strong><br>
-    哪儿也不去，只存在你的手机上。不气了不需要账号，你写的字不会上传。详见<a href="privacy.html">隐私政策</a>。</p>
+  <p><strong>我的数据会传到哪里去？</strong><br>
+  哪儿也不去，只存在你的手机上。不气了不需要账号，你写的字不会上传。详见<a href="privacy.html">隐私政策</a>。</p>
 
-    <p><strong>我写下的话会被发出去吗？</strong><br>
-    不会。不气了没有发送功能，它只是替你收着，写完给你自己看。设了冷静时间的那些，到点了也只是再拿给你自己看一遍。</p>
+  <p><strong>我写下的话会被发出去吗？</strong><br>
+  不会。不气了没有发送功能，它只是替你收着，写完给你自己看。设了冷静时间的那些，到点了也只是再拿给你自己看一遍。</p>
 
-    <p><strong>换手机之后记录还在吗？</strong><br>
-    不在。数据只存在原来那台设备上，不气了没有云同步。这些记录也不进 iPhone 的整机备份，所以换手机、从备份恢复，它们都不会跟过去。</p>
+  <p><strong>换手机之后记录还在吗？</strong><br>
+  不在。数据只存在原来那台设备上，不气了没有云同步。这些记录也不进 iPhone 的整机备份，所以换手机、从备份恢复，它们都不会跟过去。</p>
 
-    <p><strong>怎么彻底删掉我写过的东西？</strong><br>
-    写下的每一条都能单独彻底删除；「我的 → 清空所有记录」删掉全部记录；「清除全部本地数据」连设置一起删；卸载 App 也会一并消失。</p>
+  <p><strong>怎么彻底删掉我写过的东西？</strong><br>
+  写下的每一条都能单独彻底删除；「我的 → 清空所有记录」删掉全部记录；「清除全部本地数据」连设置一起删；卸载 App 也会一并消失。</p>
 
-    <p><strong>存图的时候为什么问我相册权限？</strong><br>
-    测验结果和怒气账单存成图时，图是交给手机自己的分享面板的。第一次在那里点「存储图像」，系统会问一次能不能添加到照片：这个权限只能往相册里存，读不到你相册里的任何东西。不存图就不会问。</p>
+  <p><strong>存图的时候为什么问我相册权限？</strong><br>
+  测验结果和怒气账单存成图时，图是交给手机自己的分享面板的。第一次在那里点「存储图像」，系统会问一次能不能添加到照片：这个权限只能往相册里存，读不到你相册里的任何东西。不存图就不会问。</p>
 
-    <p><strong>声音或震动太吵了。</strong><br>
-    「我的」里有音效和震动的独立开关，都可以关掉。</p>
+  <p><strong>声音或震动太吵了。</strong><br>
+  「我的」里有音效和震动的独立开关，都可以关掉。</p>
 
-    <p><strong>这是心理咨询 App 吗？</strong><br>
-    不是。不气了不做心理诊断、不提供治疗，里面那几个测验是玩笑，不是心理测量工具。它只帮你在情绪最上头的那几十秒里找个出口。如果你需要专业帮助，请联系专业人士；如果你有伤害自己的念头，请立即联系当地的紧急服务或心理危机热线。</p>
+  <p><strong>这是心理咨询 App 吗？</strong><br>
+  不是。不气了不做心理诊断、不提供治疗，里面那几个测验是玩笑，不是心理测量工具。它只帮你在情绪最上头的那几十秒里找个出口。如果你需要专业帮助，请联系专业人士；如果你有伤害自己的念头，请立即联系当地的紧急服务或心理危机热线。</p>
 
-    <h2>反馈与报错</h2>
-    <p>写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>，说明你的机型、系统版本和 App 版本（在「我的 → 关于不气了 Unmad」里）。App 里的「我的 → 反馈」也会打开邮件，收件人是同一个。</p>
-  </main>
-
-  <footer>
-    <p class="footer-links">
-      <a href="./">不气了 Unmad</a>
-      <a href="https://apps.apple.com/cn/app/id6809241933">App Store 下载</a>
-      <a href="features.html">玩法</a>
-      <a href="changelog.html">更新记录</a>
-      <a href="privacy.html">隐私政策</a>
-      <a href="terms.html">使用条款</a>
-      <a href="en/support.html" hreflang="en" lang="en">English</a>
-    </p>
-    <p>联系：<a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p>
-    <!-- ICP 备案号 2026-09-20 下发，已展示。号码从工信部系统复制，ICP 和数字都是半角。 -->
-    <p class="beian">
-      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
-    </p>
-    <!-- 公网安备是另一张批文（公安联网备案），ICP 下来之后才去办，下发前同样不得展示。
-         拿到之后把下面这行挪进上面那个 <p class="beian"> 里，号码同样从公安备案系统【复制】。
-      <a href="https://beian.mps.gov.cn" target="_blank" rel="noopener">▢公网安备 ▢▢▢▢▢▢▢▢▢▢▢▢▢▢号</a>
-    -->
-    <p>© 2026 Yuan Zhao</p>
-  </footer>
-
+  <h2>反馈与报错</h2>
+  <p>写信到 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>，说明你的机型、系统版本和 App 版本（在「我的 → 关于不气了 Unmad」里）。App 里的「我的 → 反馈」也会打开邮件，收件人是同一个。</p>
 </div>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="页脚">
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="support.html">使用与支持</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="terms.html">使用条款</a>
+    <a href="en/support.html" hreflang="en" lang="en">English</a>
+  </nav>
+  <div class="foot-meta">
+    <span>联系 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
+    <!-- 公安联网备案号下发后加在这里，下发前不得展示（README「已知还没做的」）。 -->
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>

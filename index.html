@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh-Hans" data-skin="ink" data-site="production" data-asset-base="assets/playground/" data-release="c25950c9643c">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>不气了 Unmad · 吵架后的出气筒，免费消气解压小游戏</title>
 <meta name="description" content="不气了是一款免费的 iPhone 消气 App。吵完架、气头上，砸碎这破事、戳破怒气泡泡，玩一个 30 到 90 秒的发泄解压小游戏，或把气头上的话先写下来。不用注册，无广告，记录留在手机。">
 <link rel="canonical" href="https://unmad.cn/">
@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF9EC">
+<meta name="theme-color" content="#FBF6EC">
 <meta name="apple-itunes-app" content="app-id=6809241933">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="不气了 Unmad">
@@ -24,25 +24,188 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MobileApplication","@id":"https://unmad.cn/#app","name":"Unmad","alternateName":"不气了","description":"不气了是一款免费的 iPhone 消气 App。吵完架、气头上，砸碎这破事、戳破怒气泡泡，玩一个 30 到 90 秒的发泄解压小游戏，或把气头上的话先写下来。不用注册，无广告，记录留在手机。","operatingSystem":"iOS 15.1 or later","applicationCategory":"HealthApplication","inLanguage":["en","zh-Hans"],"url":"https://unmad.cn/","installUrl":"https://apps.apple.com/cn/app/id6809241933","downloadUrl":"https://apps.apple.com/cn/app/id6809241933","image":"https://unmad.cn/assets/og.png","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"author":{"@type":"Person","name":"Yuan Zhao"}},{"@type":"WebSite","@id":"https://unmad.cn/#website","name":"不气了 Unmad","alternateName":"Unmad","url":"https://unmad.cn/","inLanguage":["zh-Hans","en"]},{"@type":"FAQPage","@id":"https://unmad.cn/#faq","mainEntity":[{"@type":"Question","name":"不气了是什么？","acceptedAnswer":{"@type":"Answer","text":"一款免费的 iPhone 消气 App。吵完架、气头上，玩一个 30 到 90 秒的发泄解压小游戏，或者把想说的话先写下来，先别发。"}},{"@type":"Question","name":"是免费的吗？","acceptedAnswer":{"@type":"Answer","text":"核心功能免费使用，无广告、无订阅。"}},{"@type":"Question","name":"一定要注册才能用吗？","acceptedAnswer":{"@type":"Answer","text":"不用。没有账号，打开就能用，断网也能玩。"}},{"@type":"Question","name":"我写的话会发给他吗？","acceptedAnswer":{"@type":"Answer","text":"不会。不气了没有发送功能，冷静箱到点也只会把这段话再拿给你看。"}},{"@type":"Question","name":"有安卓版吗？","acceptedAnswer":{"@type":"Answer","text":"目前是 iPhone App。中英文都可以在 App 内切换。"}}]}]}</script>
-<link rel="stylesheet" href="assets/playground/base.css?v=c25950c9643c">
-<link rel="stylesheet" href="assets/playground/ink.css?v=c25950c9643c">
-<script src="assets/playground/playground.js?v=c25950c9643c" defer></script>
+<link rel="preload" href="assets/fonts/noto-sc-900.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/unmad.css?v=1">
+<script src="assets/fx.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MobileApplication","@id":"https://unmad.cn/#app","name":"Unmad","alternateName":"不气了","description":"不气了是一款免费的 iPhone 消气 App。吵完架、气头上，砸碎这破事、戳破怒气泡泡，玩一个 30 到 90 秒的发泄解压小游戏，或把气头上的话先写下来。不用注册，无广告，记录留在手机。","operatingSystem":"iOS 15.1 or later","applicationCategory":"HealthApplication","inLanguage":["en","zh-Hans"],"url":"https://unmad.cn/","installUrl":"https://apps.apple.com/cn/app/id6809241933","downloadUrl":"https://apps.apple.com/cn/app/id6809241933","image":"https://unmad.cn/assets/og.png","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"author":{"@type":"Person","name":"Yuan Zhao"}},{"@type":"WebSite","@id":"https://unmad.cn/#website","name":"不气了 Unmad","alternateName":"Unmad","url":"https://unmad.cn/","inLanguage":["zh-Hans","en"]},{"@type":"FAQPage","@id":"https://unmad.cn/#faq","mainEntity":[{"@type":"Question","name":"不气了是什么？","acceptedAnswer":{"@type":"Answer","text":"一款免费的 iPhone 消气 App。吵完架、气头上，玩一个 30 到 90 秒的发泄解压小游戏，或者把想说的话先写下来，先别发。"}},{"@type":"Question","name":"是免费的吗？","acceptedAnswer":{"@type":"Answer","text":"核心功能免费使用，无广告、无订阅。"}},{"@type":"Question","name":"一定要注册才能用吗？","acceptedAnswer":{"@type":"Answer","text":"不用。没有账号，打开就能用，断网也能玩。"}},{"@type":"Question","name":"我写的话会发给他吗？","acceptedAnswer":{"@type":"Answer","text":"不会。不气了没有发送功能，冷静箱到点也只会把这段话再拿给你看。"}},{"@type":"Question","name":"有安卓版吗？","acceptedAnswer":{"@type":"Answer","text":"有。安卓手机可以在华为应用市场搜「不气了」下载，安卓版的更新会比 iPhone 晚一点。"}}]}]}</script>
+<script src="assets/room.js?v=1" defer></script>
 </head>
-<body class="play chinese app-ink published">
-<div id="app">
+<body>
 
-    <header class="site-header wrap"><a class="brand" href="#top"><img src="assets/playground/wordmark.png?v=c25950c9643c" alt="不气了"><span>UNMAD</span></a><nav aria-label="网站导航"><a href="#how">怎么玩</a><a href="#privacy">关于隐私</a><a href="#faq">常见问题</a></nav><div class="header-actions"><a class="language" href="en/" hreflang="en" lang="en">EN <span>↗</span></a><a class="nav-download" href="https://apps.apple.com/cn/app/id6809241933" target="_blank" rel="noopener">获取 App ↗</a></div></header>
-    <main id="top"><section class="hero hero-play wrap"><div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span>消气小游戏 · 可以先玩再下载</p><h1>气成这样？<br><span class="marker-word wide">砸一下</span>试试。</h1><p class="intro">想发火？手上先有点动作。<br>不用下载，现在就能试着砸一块。</p><div class="hero-actions"><a class="button primary " href="https://apps.apple.com/cn/app/id6809241933" target="_blank" rel="noopener"><span class="apple" aria-hidden="true">●</span>App Store 免费下载<span aria-hidden="true">↗</span></a><a class="try-link" href="#try">先在这里玩一下 <span>↓</span></a></div><p class="micro">免费使用 · 无广告 · 不用注册</p></div><div class="play-scene"><div class="play-side left-side"><span class="orbit-caption">先戳一颗</span><span class="face mad" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span><span class="orbit-star">✳</span><button class="play-bubble rage-bubble b-2" aria-label="戳掉旁边的气泡">×</button></div><div class="smash-game" data-game="smash"><div class="game-top"><span><i class="live-dot"></i>网页小试玩</span><span>01 / SMASH</span></div><div class="smash-wrap"><button class="smash-slab" aria-label="砸这块板子"><span class="bolt bolt1"></span><span class="bolt bolt2"></span><span class="bolt bolt3"></span><span class="bolt bolt4"></span><strong>他怎么又不回消息！</strong><span class="cracks"></span></button><div class="smash-result" hidden=""><span class="face smile" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span><strong>已碎，概不维修。</strong><button class="reset-game">再来一块 ↻</button></div></div><div class="game-footer"><span class="smash-hint">点一下，砸掉一点。</span><span class="hit-count">0 / 5</span></div></div><div class="play-side right-side"><span class="small-sticker">理智，<br>等会儿再上线。</span><span class="orbit-caption lower">已碎，概不维修。</span><span class="orbit-star">✦</span></div></div><p class="demo-disclaimer">演示数字随点击变化，不代表实际消气效果。</p></section>
-    <div class="facts wrap"><div><strong>30–90<span>s</span></strong><p>一次小暂停</p></div><div><strong>10</strong><p>轻巧小游戏</p></div><div><strong>只在本地</strong><p>记录留在手机</p></div><div class="facts-caption"><span>LESS RAGE.<br>MORE LIFE.</span><i>↘</i></div></div>
-    <section id="how" class="feature-section wrap section"><div class="section-head"><div><p class="eyebrow">01 / 一件小事，三种方向</p><h2>现在，想怎么来？</h2></div><p>不用把事情想明白。先挑一个顺手的。</p></div>
-      <div class="feature-layout"><div class="feature-copy"><div class="mode-tabs" role="tablist" aria-label="消气方向"><button id="mode-0" role="tab" aria-controls="mode-panel" aria-selected="true" tabindex="0" data-mode="0"><span>01</span>我想发泄<i>↗</i></button><button id="mode-1" role="tab" aria-controls="mode-panel" aria-selected="false" tabindex="-1" data-mode="1"><span>02</span>别让我想了<i>↗</i></button><button id="mode-2" role="tab" aria-controls="mode-panel" aria-selected="false" tabindex="-1" data-mode="2"><span>03</span>哄哄我<i>↗</i></button></div><div id="mode-panel" role="tabpanel" aria-labelledby="mode-0" tabindex="0"><h3 id="mode-title">把这口气，砸成小碎片。</h3><p id="mode-body">切掉烦恼、砸碎这破事、戳破怒气泡泡。把手指忙起来，让脑内吵架先暂停一下。</p><div id="mode-list" class="activity-pills"><span>切掉烦恼</span><span>砸碎这破事</span><span>怒气泡泡</span><span>扔掉这个念头</span><span>撕掉标签</span></div></div><a class="text-link" href="#try">先在这里玩一下 ↗</a></div><div class="feature-art"><div class="feature-shape"></div><div class="phone feature-phone"><img src="assets/playground/live/smash-zh.webp?v=c25950c9643c" loading="lazy" width="402" height="874" alt="不气了 App 实际界面"></div><span class="feature-label">实际 App 界面</span></div></div>
-    </section>
-    <section id="try" class="try-section wrap section"><div class="section-head"><div><p class="eyebrow">02 / 手上先有点动作</p><h2>这几颗气，先戳掉。</h2></div><button id="refill" class="outline-button">换一盘气泡 ↻</button></div><div class="bubble-demo"><div class="bubble-copy"><span class="pill-label">网页小试玩</span><h3>一颗一颗来。不用想。</h3><p class="bubble-response" aria-live="polite">点右边任意一颗，试试手感。</p><div class="demo-score"><span>试玩进度</span><div class="progress"><i style="width:0%"></i></div><b class="score-value">0 / 8</b></div><p class="demo-disclaimer">演示数字随点击变化，不代表实际消气效果。</p></div><div class="bubble-field"><button class="rage-bubble b-0" aria-label="戳掉怒气 1"><span class="face mad" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span></button><button class="rage-bubble b-1" aria-label="戳掉怒气 2"><span>×</span></button><button class="rage-bubble b-2" aria-label="戳掉怒气 3"><span>×</span></button><button class="rage-bubble b-3" aria-label="戳掉怒气 4"><span class="face mad" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span></button><button class="rage-bubble b-4" aria-label="戳掉怒气 5"><span>×</span></button><button class="rage-bubble b-5" aria-label="戳掉怒气 6"><span>×</span></button><button class="rage-bubble b-6" aria-label="戳掉怒气 7"><span class="face mad" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span></button><button class="rage-bubble b-7" aria-label="戳掉怒气 8"><span>×</span></button></div></div></section>
-    <section class="small-features wrap section"><article class="note-card"><div class="small-icon">✎</div><p class="eyebrow">写下来 · 先别发</p><h3>气头上的话，先写给自己。</h3><p>可以顺手放进冷静箱。5、10、30 分钟，到点了，再决定。</p><div class="timer-options" role="group" aria-label="冷静时间演示"><button data-minutes="5" aria-pressed="true">5 分钟</button><button data-minutes="10" aria-pressed="false">10 分钟</button><button data-minutes="30" aria-pressed="false">30 分钟</button></div><div class="timer-message" aria-live="polite">先替你收着 5 分钟。</div></article><article class="privacy-card" id="privacy"><div class="small-icon">⌑</div><p class="eyebrow">隐私 · 从一开始就这样</p><h3>你写的话，只留给你。</h3><p>没有账号。心情记录和冷静箱留在你的手机里，你写的字不上传，想说的话也不会发给任何人。</p><div class="privacy-tags"><span>不用注册</span><span>断网也能用</span><span>没有发送按钮</span></div><a class="text-link" href="privacy.html" target="_blank" rel="noopener">看看隐私说明 ↗</a></article></section>
-    <section class="faq-section wrap section" id="faq"><div><p class="eyebrow">03 / FAQ</p><h2>你可能还想知道</h2></div><div class="faq-items"><details><summary>不气了是什么？<span>+</span></summary><p>一款免费的 iPhone 消气 App。吵完架、气头上，玩一个 30 到 90 秒的发泄解压小游戏，或者把想说的话先写下来，先别发。</p></details><details><summary>是免费的吗？<span>+</span></summary><p>核心功能免费使用，无广告、无订阅。</p></details><details><summary>一定要注册才能用吗？<span>+</span></summary><p>不用。没有账号，打开就能用，断网也能玩。</p></details><details><summary>我写的话会发给他吗？<span>+</span></summary><p>不会。不气了没有发送功能，冷静箱到点也只会把这段话再拿给你看。</p></details><details><summary>有安卓版吗？<span>+</span></summary><p>目前是 iPhone App。中英文都可以在 App 内切换。</p></details></div></section>
-    <section class="closing wrap section"><span class="face smile" aria-hidden="true"><i class="brow left"></i><i class="brow right"></i><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i><i class="cheek left"></i><i class="cheek right"></i></span><h2>好了，就去过你的日子。</h2><p>不气了的目标，是让你少待一会儿。</p><a class="button primary " href="https://apps.apple.com/cn/app/id6809241933" target="_blank" rel="noopener"><span class="apple" aria-hidden="true">●</span>App Store 免费下载<span aria-hidden="true">↗</span></a></section>
-    </main><footer class="wrap"><div class="footer-brand"><span>© 2026 Unmad · 不气了</span><p><a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p><p class="beian"><a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a></p></div><div class="footer-links"><a href="features.html">玩法</a><a href="changelog.html">更新记录</a><a href="privacy.html" target="_blank" rel="noopener">关于隐私</a><a href="support.html" target="_blank" rel="noopener">联系与支持</a><a href="terms.html">使用条款</a><button id="motion" type="button" aria-pressed="true">动效 ON</button></div></footer><div id="toast" role="status"></div></div>
-<noscript><p class="published-noscript">开启 JavaScript 即可试玩。你仍可阅读介绍，或下载 App。</p></noscript>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="c-mallet-handle"><rect x="-6" y="-122" width="12" height="125" rx="6"/></clipPath>
+    <clipPath id="c-mallet-head"><rect x="-41.5" y="-147.5" width="83" height="45" rx="6.5"/></clipPath>
+    <g id="mallet-ink"><rect x="-9" y="-125" width="18" height="131" rx="9" fill="#21180F"/><rect x="-45" y="-151" width="90" height="52" rx="10" fill="#21180F"/></g>
+    <g id="mallet">
+      <rect x="-7.5" y="-123.5" width="15" height="128" rx="7.5" fill="#D08A48"/>
+      <g clip-path="url(#c-mallet-handle)">
+        <rect x="-6" y="-122" width="4" height="125" fill="#F2B77A"/>
+        <rect x="-6" y="-37" width="12" height="40" fill="#F24738"/>
+        <rect x="-6" y="-37" width="12" height="3" fill="#21180F"/><rect x="-6" y="-22" width="12" height="2.5" fill="#21180F"/><rect x="-6" y="-10" width="12" height="2.5" fill="#21180F"/>
+      </g>
+      <rect x="-7.5" y="-123.5" width="15" height="128" rx="7.5" fill="none" stroke="#21180F" stroke-width="3"/>
+      <rect x="-43.25" y="-149.25" width="86.5" height="48.5" rx="8.25" fill="#9AA3B5"/>
+      <g clip-path="url(#c-mallet-head)">
+        <rect x="-41.5" y="-147.5" width="83" height="10" fill="#D5DBE6"/>
+        <rect x="-41.5" y="-111.5" width="83" height="9" fill="#848DA0"/>
+        <rect x="-41.5" y="-147.5" width="9" height="45" fill="#6F7889"/><rect x="-32.5" y="-147.5" width="3" height="45" fill="#21180F"/>
+        <rect x="32.5" y="-147.5" width="9" height="45" fill="#6F7889"/><rect x="29.5" y="-147.5" width="3" height="45" fill="#21180F"/>
+      </g>
+      <rect x="-43.25" y="-149.25" width="86.5" height="48.5" rx="8.25" fill="none" stroke="#21180F" stroke-width="3.5"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="不气了 Unmad 首页"><img src="assets/wordmark.png" width="78" height="26" alt="不气了"><span>UNMAD</span></a>
+  <nav class="nav-links" aria-label="网站导航">
+    <a href="#room">砸砸屋</a>
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="privacy.html">隐私</a>
+    <a href="support.html">帮助</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="en/" hreflang="en" lang="en">EN ↗</a>
+    <a class="get" href="https://apps.apple.com/cn/app/id6809241933">获取 App ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" id="room">
+    <div class="copy">
+      <p class="tag"><span class="dia">◆</span>Unmad 1.3.0<span class="sep">/</span>砸砸屋 <span class="soon">即将上线</span></p>
+      <h1>气到想掀桌？<br>这一屋，<span class="hl">随你砸。<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 19 C 80 7, 170 5, 296 10 L 293 21 C 175 15, 86 19, 9 27 Z"/></svg></span></h1>
+      <p class="lede">砸完那件破事往下一拉，一整间客厅随你砸。电视能推，桌子能掀，搁板一扫全下来。</p>
+      <div class="ctas">
+        <a class="btn" href="https://apps.apple.com/cn/app/id6809241933">App Store 免费下载 <span aria-hidden="true">↗</span></a>
+        <span class="note try"><span class="d">先在右边砸两下 →</span><span class="m">先在下面砸两下 ↓</span></span>
+      </div>
+      <dl class="specs"><div><dt>13</dt><dd>样能砸的</dd></div><div><dt>6</dt><dd>种下手法</dd></div><div><dt>0</dt><dd>件要你收拾</dd></div></dl>
+    </div>
+    <div class="rig" data-room>
+      <div class="plinth" aria-hidden="true"></div>
+      <div class="frame">
+        <i class="cn tl"></i><i class="cn tr"></i><i class="cn bl"></i><i class="cn br"></i>
+        <span class="lbl l1" aria-hidden="true">CAM 01 · 客厅</span><span class="lbl l2" aria-hidden="true"><b class="rec"></b>LIVE</span>
+        <span class="lbl l3" data-xy aria-hidden="true">X 000 · Y 000</span><span class="lbl l4" aria-hidden="true">534 × 626</span>
+        <div class="paper">
+          <div class="stage" data-stage data-base="assets/room/" role="img" aria-label="可以砸的客厅：点一下锤一下，按住更狠；左下角的筐里能扔东西；搁板上横着一扫，茶几、电视柜往上一推能掀翻，电视横着狠推一把能推下去。"></div>
+          <div class="cross" data-cross hidden><i class="cx"></i><i class="cy"></i></div>
+          <div class="tags" data-tags></div>
+          <div class="fxo" data-fxo></div>
+          <p class="hint" data-hint>砸！按住更狠。</p>
+          <div class="clear" data-clear hidden>13 / 13 · 清场</div>
+        </div>
+      </div>
+      <div class="readout">
+        <div class="pw" data-pw><span>力度</span><i></i><i></i><i></i><i></i><i></i><b class="mx">MAX</b></div>
+        <div class="cnt"><span>已砸</span><b data-count>00</b><span>/ 13</span></div>
+        <div class="btns"><button class="chip" type="button" data-sound>♪ 声音 开</button><button class="chip" type="button" data-reset>↺ 收拾干净</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" aria-labelledby="new-h">
+    <div class="shead"><p class="tag"><span class="dia">◆</span>1.3.0<span class="sep">/</span>02 — 05</p><h2 id="new-h">这一版还改了这些</h2></div>
+    <div class="cards">
+      <a class="card" href="features.html#g-window"><div class="shot"><span class="pic"><img src="assets/new/window-zh.webp" width="640" height="800" alt="火车窗外，春天的田野和湖" loading="lazy"></span><i class="cn tl"></i><i class="cn br"></i></div><p class="idx">02 · 我现在谁都不想听</p><h3>变成一扇火车窗<span class="go" aria-hidden="true">→</span></h3><p>窗外从早到晚、从春到冬轮着换。</p></a>
+      <a class="card" href="features.html#g-retreat"><div class="shot"><span class="pic"><img src="assets/new/bin-zh.webp" width="640" height="800" alt="写着「真给他脸了？」的纸条悬在破事专用垃圾桶上" loading="lazy"></span><i class="cn tl"></i><i class="cn br"></i></div><p class="idx">03 · 扔掉这个念头</p><h3>念头越胀越大<span class="go" aria-hidden="true">→</span></h3><p>塞满了垃圾桶，它会打嗝。</p></a>
+      <a class="card" href="features.html#g-tear"><div class="shot"><span class="pic"><img src="assets/new/tear-zh.webp" width="640" height="800" alt="团子身上前后左右贴满了标签" loading="lazy"></span><i class="cn tl"></i><i class="cn br"></i></div><p class="idx">04 · 撕掉标签</p><h3>前后左右贴满了<span class="go" aria-hidden="true">→</span></h3><p>转着团子撕。切掉烦恼、撕掉标签还能写自己的话，一次最多五句。</p></a>
+      <a class="card" href="features.html#g-dance"><div class="shot"><span class="pic"><img src="assets/new/dance-zh.webp" width="640" height="800" alt="给我蹦迪：屏幕上喊「左！」，底下是点歌" loading="lazy"></span><i class="cn tl"></i><i class="cn br"></i></div><p class="idx">05 · 给我蹦迪</p><h3>能点歌了<span class="go" aria-hidden="true">→</span></h3><p>想听哪首点哪首。</p></a>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="how" aria-labelledby="how-h">
+    <div class="shead"><div><p class="tag"><span class="dia">◆</span>怎么玩<span class="sep">/</span>How it works</p></div><h2 id="how-h">先报个数，再挑一条路</h2></div>
+    <div class="how-intro"><p>打开不气了，先给现在的火气报个数，再挑一条路。不用把事情想明白，每个小游戏几十秒，玩完再报一次，看看降了多少。</p></div>
+    <div class="modes">
+      <article class="mode">
+        <p class="mode-top"><span>MODE <b>01</b></span><span>发泄</span></p>
+        <h3>我想发泄</h3>
+        <p class="say">先把这口气狠狠干掉。</p>
+        <ul><li><i>01</i>切掉烦恼</li><li><i>02</i>砸碎这破事 <span class="new">+ 砸砸屋</span></li><li><i>03</i>怒气泡泡</li><li><i>04</i>扔掉这个念头</li><li><i>05</i>撕掉标签</li></ul>
+        <a class="more-link" href="features.html#vent">看截图 <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="mode">
+        <p class="mode-top"><span>MODE <b>02</b></span><span>转移注意</span></p>
+        <h3>别让我想了</h3>
+        <p class="say">脑子先切个台。</p>
+        <ul><li><i>01</i>脑子，换个台</li><li><i>02</i>找找看</li><li><i>03</i>整理一下</li><li><i>04</i>敲木鱼</li><li><i>05</i>捏团子</li></ul>
+        <a class="more-link" href="features.html#distract">看截图 <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="mode">
+        <p class="mode-top"><span>MODE <b>03</b></span><span>被哄</span></p>
+        <h3>哄哄我</h3>
+        <p class="say">我现在不想讲道理。</p>
+        <ul><li><i>01</i>给我蹦迪</li><li><i>02</i>娘娘息怒</li><li><i>03</i>不值得</li><li><i>04</i>管他呢</li><li><i>05</i>发疯模式</li><li><i>06</i>我现在谁都不想听</li></ul>
+        <a class="more-link" href="features.html#comfort">看截图 <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+    <dl class="specs how-specs"><div><dt>10</dt><dd>个消气小游戏</dd></div><div><dt>6</dt><dd>种哄法</dd></div><div><dt>30–90</dt><dd>秒，一次小暂停</dd></div></dl>
+  </section>
+
+  <section class="sec wrap" aria-label="写下来和隐私">
+    <div class="duo">
+      <article class="panel note-p">
+        <p class="tag"><span class="dia">◆</span>写下来<span class="sep">/</span>先别发</p>
+        <h3>气头上的话，先写给自己。</h3>
+        <p>可以顺手放进冷静箱。5、10、30 分钟，到点了，再决定还发不发。</p>
+        <div class="timer" data-timer role="group" aria-label="冷静时间演示">
+          <button class="chip" type="button" aria-pressed="true" data-msg="先替你收着 5 分钟。">5 分钟</button>
+          <button class="chip" type="button" aria-pressed="false" data-msg="先替你收着 10 分钟，去喝口水。">10 分钟</button>
+          <button class="chip" type="button" aria-pressed="false" data-msg="先替你收着 30 分钟，到点了再说。">30 分钟</button>
+        </div>
+        <p class="timer-msg" data-timer-msg aria-live="polite">先替你收着 5 分钟。</p>
+      </article>
+      <article class="panel priv-p" id="privacy">
+        <p class="tag"><span class="dia">◆</span>隐私<span class="sep">/</span>从一开始就这样</p>
+        <h3>你写的话，只留给你。</h3>
+        <p>没有账号。心情记录和冷静箱留在你的手机里，你写的字不上传，想说的话也不会发给任何人。</p>
+        <ul class="ptags"><li>不用注册</li><li>断网也能用</li><li>没有发送按钮</li></ul>
+        <a href="privacy.html">看看隐私政策 →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="faq" aria-labelledby="faq-h">
+    <div class="faq-wrap">
+      <div class="shead"><p class="tag"><span class="dia">◆</span>FAQ<span class="sep">/</span>05</p><h2 id="faq-h">你可能还想知道</h2><p>没找到答案？看<a href="support.html">使用与支持</a>，或者写信给我们。</p></div>
+      <div class="faq">
+        <details open><summary><i>Q.01</i>不气了是什么？<b aria-hidden="true">+</b></summary><p>一款免费的 iPhone 消气 App。吵完架、气头上，玩一个 30 到 90 秒的发泄解压小游戏，或者把想说的话先写下来，先别发。</p></details>
+        <details><summary><i>Q.02</i>是免费的吗？<b aria-hidden="true">+</b></summary><p>核心功能免费使用，无广告、无订阅。</p></details>
+        <details><summary><i>Q.03</i>一定要注册才能用吗？<b aria-hidden="true">+</b></summary><p>不用。没有账号，打开就能用，断网也能玩。</p></details>
+        <details><summary><i>Q.04</i>我写的话会发给他吗？<b aria-hidden="true">+</b></summary><p>不会。不气了没有发送功能，冷静箱到点也只会把这段话再拿给你看。</p></details>
+        <details><summary><i>Q.05</i>有安卓版吗？<b aria-hidden="true">+</b></summary><p>有。安卓手机可以在华为应用市场搜「不气了」下载，安卓版的更新会比 iPhone 晚一点。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing wrap">
+    <p class="tag" style="justify-content:center"><span class="dia">◆</span>END<span class="sep">/</span>收工</p>
+    <h2>好了，就去<span class="hl">过你的日子。<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 19 C 80 7, 170 5, 296 10 L 293 21 C 175 15, 86 19, 9 27 Z"/></svg></span></h2>
+    <p>不气了的目标，是让你少待一会儿。</p>
+    <div class="ctas"><a class="btn" href="https://apps.apple.com/cn/app/id6809241933">App Store 免费下载 <span aria-hidden="true">↗</span></a></div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="页脚">
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="support.html">使用与支持</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="terms.html">使用条款</a>
+    <a href="en/" hreflang="en" lang="en">English</a>
+  </nav>
+  <div class="foot-meta">
+    <span>联系 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
+    <!-- 公安联网备案号下发后加在这里，下发前不得展示（README「已知还没做的」）。 -->
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/features.html">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF4DD">
+<meta name="theme-color" content="#FBF6EC">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="不气了 Unmad">
 <meta property="og:title" content="不气了玩法：10 个消气解压小游戏 · 不气了 Unmad">
@@ -23,259 +23,173 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-:root {
-  --cream: #FFF4DD;
-  --paper: #FFFCF4;
-  --ink: #21180F;
-  --muted: #6B5B48;
-  --orange: #FF9D2E;
-  --red: #EF4136;
-  --yellow: #FFD84D;
-  --line: #21180F;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--ink);
-  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-        "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-.wrap { max-width: 760px; margin: 0 auto; padding: 24px 20px 72px; }
-.topbar {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px; margin-bottom: 30px;
-}
-.mark {
-  display: inline-block; padding: 6px 14px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--orange); font-weight: 800; letter-spacing: .02em;
-  box-shadow: 3px 3px 0 var(--line); color: var(--ink); text-decoration: none;
-}
-.mark:hover { color: var(--ink); }
-.topbar nav { display: flex; gap: 18px; font-size: 14px; }
-.topbar nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
-.topbar nav a:hover { color: var(--red); text-decoration: underline; }
-header.page { margin-bottom: 28px; }
-h1 { font-size: 28px; font-weight: 800; margin: 0 0 6px; letter-spacing: -.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-main {
-  background: var(--paper); border: 2.5px solid var(--line); border-radius: 18px;
-  padding: 28px 24px; box-shadow: 5px 5px 0 var(--line);
-}
-h2 { font-size: 20px; font-weight: 800; margin: 36px 0 4px; }
-h2:first-child { margin-top: 0; }
-h3 { font-size: 16px; font-weight: 800; margin: 0 0 4px; line-height: 1.4; }
-p { margin: 0 0 14px; }
-ul { margin: 0 0 14px; padding-left: 22px; }
-li { margin-bottom: 6px; }
-a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { color: var(--red); }
-hr { border: 0; border-top: 2px dashed rgba(33,24,15,.25); margin: 30px 0; }
-.section-sub { color: var(--muted); margin-bottom: 16px; }
-.new {
-  display: inline-block; margin-left: 6px; padding: 0 7px; border: 1.5px solid var(--line);
-  border-radius: 999px; background: var(--yellow); font-size: 11px; font-weight: 800;
-  line-height: 18px; vertical-align: 2px; white-space: nowrap;
-}
-.games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 16px; margin-bottom: 8px; }
-.game img, .comfort img {
-  display: block; width: 100%; height: auto; border: 2px solid var(--line); border-radius: 16px;
-  background: var(--cream); margin-bottom: 10px;
-}
-.game .line { font-weight: 600; margin-bottom: 4px; font-size: 15px; line-height: 1.55; }
-.game .how { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0; }
-.comfort { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; align-items: start; }
-.modes { list-style: none; padding: 0; margin: 0; }
-.modes li { padding: 9px 0; border-bottom: 1.5px dashed rgba(33,24,15,.2); margin: 0; }
-.modes li:last-child { border-bottom: 0; }
-.modes b { display: block; }
-.modes span { color: var(--muted); font-size: 14px; }
-.more h3 { margin-top: 18px; }
-.release { margin-top: 30px; }
-.release:first-child { margin-top: 0; }
-.release h2 { margin: 0 0 2px; }
-.when { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
-.release ul { padding-left: 0; list-style: none; }
-.release li { margin-bottom: 10px; }
-.release li b { display: block; }
-.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0; }
-.store {
-  display: inline-block; padding: 10px 20px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--yellow); color: var(--ink);
-  font-weight: 800; font-size: 15px; box-shadow: 4px 4px 0 var(--line);
-  text-decoration: none;
-}
-.store:hover {
-  background: var(--orange); color: var(--ink);
-  transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--line);
-}
-.cta-note { font-size: 13px; color: var(--muted); }
-footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; }
-footer p:last-child { margin-bottom: 0; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; }
-.beian { display: flex; flex-wrap: wrap; gap: 4px 10px; justify-content: center; }
-.beian a { color: var(--muted); text-decoration: none; }
-.beian a:hover { color: var(--red); text-decoration: underline; }
-@media (max-width: 640px) {
-  .games { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
-}
-@media (max-width: 480px) {
-  .wrap { padding: 20px 14px 56px; }
-  main { padding: 22px 16px; box-shadow: 4px 4px 0 var(--line); }
-  h1 { font-size: 24px; }
-  .comfort { grid-template-columns: 1fr; }
-  .comfort img { max-width: 220px; }
-}
-</style>
+<link rel="preload" href="assets/fonts/noto-sc-900.woff2?v=1" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/unmad.css?v=1">
+<script src="assets/fx.js?v=1" defer></script>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="topbar">
-    <a class="mark" href="./">不气了 · Unmad</a>
-    <nav>
-      <a href="./">首页</a>
-      <a href="changelog.html">更新记录</a>
-      <a href="en/features.html" hreflang="en" lang="en">English</a>
-    </nav>
-  </header>
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="不气了 Unmad 首页"><img src="assets/wordmark.png" width="78" height="26" alt="不气了"><span>UNMAD</span></a>
+  <nav class="nav-links" aria-label="网站导航">
+    <a href="./#room">砸砸屋</a>
+    <a href="features.html" aria-current="page">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="privacy.html">隐私</a>
+    <a href="support.html">帮助</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="en/features.html" hreflang="en" lang="en">EN ↗</a>
+    <a class="get" href="https://apps.apple.com/cn/app/id6809241933">获取 App ↗</a>
+  </div>
+</header>
 
-  <header class="page">
-    <h1>不气了里有什么</h1>
-    <p class="sub">10 个消气解压小游戏、6 种哄法，外加写下来、消气日历和怒气账单</p>
-  </header>
+<header class="phead wrap">
+  <p class="tag"><span class="dia">◆</span>玩法<span class="sep">/</span>Games</p>
+  <h1>不气了里有什么</h1>
+  <p class="sub">10 个消气解压小游戏、6 种哄法，外加写下来、消气日历和怒气账单</p>
+</header>
 
-  <main>
-    <p>打开不气了，先给现在的火气报个数，再挑一条路：我想发泄、别让我想了、哄哄我。每个小游戏几十秒，玩完再报一次数，看看降了多少。下面的截图都是 App 里的真实界面。</p>
+<main class="wrap">
+<p class="intro">打开不气了，先给现在的火气报个数，再挑一条路：我想发泄、别让我想了、哄哄我。每个小游戏几十秒，玩完再报一次数，看看降了多少。下面的截图都是 App 里的真实界面。</p>
 
-    <h2 id="vent">我想发泄</h2>
-    <p class="section-sub">先把这口气狠狠干掉。</p>
-    <div class="games">
-      <article class="game">
-        <img src="assets/games/swat-zh.webp" width="400" height="870" alt="切掉烦恼的游戏画面：一句烦心话刚被一刀切成两半">
-        <h3>切掉烦恼</h3>
-        <p class="line">手指一划，把脑内弹幕切成两半。</p>
-        <p class="how">看到哪句烦，就往哪句划一刀；切开的碎块还能接着切。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/smash-zh.webp" width="400" height="870" loading="lazy" alt="砸碎这破事的游戏画面：写着「他明明看见了，就是不回我」的板子砸出了裂纹">
-        <h3>砸碎这破事</h3>
-        <p class="line">把那件破事写上去，一下一下砸碎。</p>
-        <p class="how">点一下是普通一击，按住再松开是蓄力砸，砸到最后整句话一起炸开。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/bubbles-zh.webp" width="400" height="870" loading="lazy" alt="怒气泡泡的游戏画面：写着哼、气、烦的泡泡在屏幕里弹">
-        <h3>怒气泡泡</h3>
-        <p class="line">戳破一串会弹跳的坏情绪。</p>
-        <p class="how">戳！戳！戳！不要讲道理。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/retreat-zh.webp" width="400" height="870" loading="lazy" alt="扔掉这个念头的游戏画面：一张脑内弹窗和破事专用垃圾桶">
-        <h3>扔掉这个念头</h3>
-        <p class="line">把脑内弹窗拖进破事专用垃圾桶。</p>
-        <p class="how">拖进垃圾桶，别跟它讲理。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/tear-zh.webp" width="400" height="870" loading="lazy" alt="撕掉标签的游戏画面：团子身上贴满「无可救药」「矫情」这类标签">
-        <h3>撕掉标签<span class="new">1.2.0 新增</span></h3>
-        <p class="line">吵架时被扣的帽子，一张张亲手撕掉。</p>
-        <p class="how">捏住一角，撕掉；也可以自己写一张贴上去再撕。</p>
-      </article>
-    </div>
-
-    <h2 id="distract">别让我想了</h2>
-    <p class="section-sub">脑子先切个台。</p>
-    <div class="games">
-      <article class="game">
-        <img src="assets/games/channel-zh.webp" width="400" height="870" loading="lazy" alt="脑子换个台的游戏画面：早睡还是熬夜，二选一">
-        <h3>脑子，换个台</h3>
-        <p class="line">用无意义二选一强行打断越想越气。</p>
-        <p class="how">早睡还是熬夜？别想了，选！</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/look-zh.webp" width="400" height="870" loading="lazy" alt="找找看的游戏画面：题目是「找一个折起来的东西」">
-        <h3>找找看</h3>
-        <p class="line">让眼睛去现实世界巡逻一圈。</p>
-        <p class="how">照着题目在身边找一样东西，找到了点一下。不用拍照，不用证明。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/organize-zh.webp" width="400" height="870" loading="lazy" alt="整理一下的游戏画面：笔、小票、橡皮等着拖回文具盒、纸篓和小物盘">
-        <h3>整理一下</h3>
-        <p class="line">把桌面小混乱拖回它们的小窝。</p>
-        <p class="how">笔、小票、橡皮……各回各的盒子。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/woodfish-zh.webp" width="400" height="870" loading="lazy" alt="敲木鱼的游戏画面：一只木鱼和小槌，飘出「今日不造口业 +20」">
-        <h3>敲木鱼</h3>
-        <p class="line">电子功德到账，杀气余额下降。</p>
-        <p class="how">轻轻敲，狠狠退火。</p>
-      </article>
-      <article class="game">
-        <img src="assets/games/squish-zh.webp" width="400" height="870" loading="lazy" alt="捏团子的游戏画面：一颗气鼓鼓的橙色团子，底下是五种料">
-        <h3>捏团子<span class="new">1.2.0 新增</span></h3>
-        <p class="line">按一按、捏一捏，看它慢慢弹回来。</p>
-        <p class="how">按住捏，松手弹一下就回来；果冻、麻薯、粘土、水球、脆皮五种料随时换。</p>
-      </article>
-    </div>
-
-    <h2 id="comfort">哄哄我</h2>
-    <p class="section-sub">我现在不想讲道理。</p>
-    <div class="comfort">
-      <img src="assets/games/comfort-zh.webp" width="400" height="870" loading="lazy" alt="哄哄我的画面：哄哄专员和六种哄法">
-      <ul class="modes">
-        <li><b>给我蹦迪</b><span>左！右！甩！再来！放首歌，跟着拍子蹦。</span></li>
-        <li><b>娘娘息怒</b><span>扇风、奉茶、退朝</span></li>
-        <li><b>不值得</b><span>酷飒靓姐保护心情</span></li>
-        <li><b>管他呢</b><span>关我屁事节能模式</span></li>
-        <li><b>发疯模式</b><span>发疯文学随机发牌</span></li>
-        <li><b>我现在谁都不想听</b><span>安静陪着，不多嘴</span></li>
-      </ul>
-    </div>
-
-    <h2 id="more">不玩的时候</h2>
-    <div class="more">
-      <h3>写下来，先别发</h3>
-      <p>气头上想说的话，先写给自己看，存进日历。本来想发给谁的，可以顺手选个冷静时间（5、10 或 30 分钟），到点了再决定还发不发。不气了没有发送功能，一句都不会替你发出去。</p>
-      <h3>消气日历</h3>
-      <p>记的不是这个月生了几次气，而是你把自己拉回来了几次。缓过来的那天挂一位值班专员；晚上 6 点后没人惹你，可以盖一枚晴天章；月底还有一张奖状。没有连续打卡。</p>
-      <h3>怒气账单</h3>
-      <p>一轮结束，给这件破事留个案底：点几下「犯了什么事」，想补一句就补一句。每个月出一张账单，能存成图。</p>
-      <h3>专员图鉴<span class="new">1.2.0 新增</span></h3>
-      <p>见过的值班专员都收在这里，还有节日限定章和几个隐藏款。隐藏款得自己撞见。</p>
-      <h3>三个测验</h3>
-      <p>不气的时候玩：生气天气、吵架职业、恋爱依恋，结果能存成图。都是拿来玩的，不是心理测评。</p>
-      <h3>哄她版</h3>
-      <p>轮到你去哄人的时候，首页可以切到「哄她版」。</p>
-    </div>
-
-    <p>想看每一版加了什么，翻<a href="changelog.html">更新记录</a>；怎么用、数据存在哪里，见<a href="support.html">使用与支持</a>。</p>
-    <hr>
-    <p class="cta">
-      <a class="store" href="https://apps.apple.com/cn/app/id6809241933">App Store 免费下载</a>
-      <span class="cta-note">免费 · 无广告 · 不用注册 · 写的不上传</span>
-    </p>
-  </main>
-
-  <footer>
-    <p class="footer-links">
-      <a href="./">不气了 Unmad</a>
-      <a href="https://apps.apple.com/cn/app/id6809241933">App Store 下载</a>
-      <a href="support.html">使用与支持</a>
-      <a href="privacy.html">隐私政策</a>
-      <a href="terms.html">使用条款</a>
-      <a href="en/features.html" hreflang="en" lang="en">English</a>
-    </p>
-    <p>联系：<a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p>
-    <p class="beian">
-      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
-    </p>
-    <p>© 2026 Yuan Zhao</p>
-  </footer>
-
+<section class="sec" id="vent" aria-labelledby="vent-h">
+<div class="shead stack"><p class="tag"><span class="dia">◆</span>Mode 01<span class="sep">/</span>发泄</p><h2 id="vent-h">我想发泄</h2><p>先把这口气狠狠干掉。</p></div>
+<div class="games">
+<article class="game" id="g-swat">
+<div class="shot"><span class="pic"><img src="assets/games/swat-zh.webp" width="400" height="870" alt="切掉烦恼的游戏画面：一句烦心话刚被一刀切成两半"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">01 / 06</p>
+<h3>切掉烦恼</h3>
+<p class="line">手指一划，把脑内弹幕切成两半。</p>
+<p class="how">看到哪句烦，就往哪句划一刀；切开的碎块还能接着切。也能写自己的话，一次最多五句。</p>
+</article>
+<article class="game" id="g-smash">
+<div class="shot"><span class="pic"><img src="assets/games/smash-zh.webp" width="400" height="870" loading="lazy" alt="砸碎这破事的游戏画面：写着「他明明看见了，就是不回我」的板子砸出了裂纹"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">02 / 06</p>
+<h3>砸碎这破事</h3>
+<p class="line">把那件破事写上去，一下一下砸碎。</p>
+<p class="how">点一下是普通一击，按住再松开是蓄力砸，砸到最后整句话一起炸开。砸完往下一拉，就进了砸砸屋。</p>
+</article>
+<article class="game" id="g-room">
+<div class="shot"><span class="pic"><img src="assets/games/room-zh.webp" width="400" height="870" loading="lazy" alt="砸砸屋的画面：一间客厅，电视、茶几、落地灯、搁板上的盘子，左下角一筐随便扔的东西"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">03 / 06</p>
+<h3>砸砸屋 <span class="new">1.3.0 新增</span></h3>
+<p class="line">一整间客厅，随你砸。</p>
+<p class="how">点哪儿锤哪儿，按住更狠；筐里的东西随便扔。电视能推，茶几能掀，搁板一扫全下来。</p>
+</article>
+<article class="game" id="g-bubbles">
+<div class="shot"><span class="pic"><img src="assets/games/bubbles-zh.webp" width="400" height="870" loading="lazy" alt="怒气泡泡的游戏画面：写着哼、气、烦的泡泡在屏幕里弹"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">04 / 06</p>
+<h3>怒气泡泡</h3>
+<p class="line">戳破一串会弹跳的坏情绪。</p>
+<p class="how">戳！戳！戳！不要讲道理。</p>
+</article>
+<article class="game" id="g-retreat">
+<div class="shot"><span class="pic"><img src="assets/games/retreat-zh.webp?v=2" width="400" height="870" loading="lazy" alt="扔掉这个念头的游戏画面：写着「真给他脸了？」的纸条悬在破事专用垃圾桶上"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">05 / 06</p>
+<h3>扔掉这个念头</h3>
+<p class="line">把脑内弹窗拖进破事专用垃圾桶。</p>
+<p class="how">拖进垃圾桶，别跟它讲理。念头越胀越大，塞满了垃圾桶会打嗝。</p>
+</article>
+<article class="game" id="g-tear">
+<div class="shot"><span class="pic"><img src="assets/games/tear-zh.webp?v=2" width="400" height="870" loading="lazy" alt="撕掉标签的游戏画面：团子身上贴满「不可理喻」「至于吗」这类标签"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">06 / 06</p>
+<h3>撕掉标签</h3>
+<p class="line">吵架时被扣的帽子，一张张亲手撕掉。</p>
+<p class="how">捏住一角，撕掉。前后左右都贴满了，转着团子撕；也能写自己的话贴上去再撕，一次最多五句。</p>
+</article>
 </div>
+</section>
+
+<section class="sec" id="distract" aria-labelledby="distract-h">
+<div class="shead stack"><p class="tag"><span class="dia">◆</span>Mode 02<span class="sep">/</span>转移注意</p><h2 id="distract-h">别让我想了</h2><p>脑子先切个台。</p></div>
+<div class="games">
+<article class="game" id="g-channel">
+<div class="shot"><span class="pic"><img src="assets/games/channel-zh.webp" width="400" height="870" loading="lazy" alt="脑子换个台的游戏画面：早睡还是熬夜，二选一"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">01 / 05</p>
+<h3>脑子，换个台</h3>
+<p class="line">用无意义二选一强行打断越想越气。</p>
+<p class="how">早睡还是熬夜？别想了，选！</p>
+</article>
+<article class="game" id="g-look">
+<div class="shot"><span class="pic"><img src="assets/games/look-zh.webp" width="400" height="870" loading="lazy" alt="找找看的游戏画面：题目是「找一个折起来的东西」"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">02 / 05</p>
+<h3>找找看</h3>
+<p class="line">让眼睛去现实世界巡逻一圈。</p>
+<p class="how">照着题目在身边找一样东西，找到了点一下。不用拍照，不用证明。</p>
+</article>
+<article class="game" id="g-organize">
+<div class="shot"><span class="pic"><img src="assets/games/organize-zh.webp" width="400" height="870" loading="lazy" alt="整理一下的游戏画面：笔、小票、橡皮等着拖回文具盒、纸篓和小物盘"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">03 / 05</p>
+<h3>整理一下</h3>
+<p class="line">把桌面小混乱拖回它们的小窝。</p>
+<p class="how">笔、小票、橡皮……各回各的盒子。</p>
+</article>
+<article class="game" id="g-woodfish">
+<div class="shot"><span class="pic"><img src="assets/games/woodfish-zh.webp" width="400" height="870" loading="lazy" alt="敲木鱼的游戏画面：一只木鱼和小槌，飘出「今日不造口业 +20」"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">04 / 05</p>
+<h3>敲木鱼</h3>
+<p class="line">电子功德到账，杀气余额下降。</p>
+<p class="how">轻轻敲，狠狠退火。</p>
+</article>
+<article class="game" id="g-squish">
+<div class="shot"><span class="pic"><img src="assets/games/squish-zh.webp" width="400" height="870" loading="lazy" alt="捏团子的游戏画面：一颗气鼓鼓的橙色团子，底下是五种料"></span><i class="cn tl"></i><i class="cn br"></i></div>
+<p class="idx">05 / 05</p>
+<h3>捏团子</h3>
+<p class="line">按一按、捏一捏，看它慢慢弹回来。</p>
+<p class="how">按住捏，松手弹一下就回来；果冻、麻薯、粘土、水球、脆皮五种料随时换。</p>
+</article>
+</div>
+</section>
+
+<section class="sec" id="comfort" aria-labelledby="comfort-h">
+<div class="shead stack"><p class="tag"><span class="dia">◆</span>Mode 03<span class="sep">/</span>被哄</p><h2 id="comfort-h">哄哄我</h2><p>我现在不想讲道理。</p></div>
+<div class="comfort">
+<figure><div class="shot"><span class="pic"><img src="assets/games/comfort-zh.webp" width="400" height="870" loading="lazy" alt="哄哄我的画面：哄哄专员和六种哄法"></span><i class="cn tl"></i><i class="cn br"></i></div><figcaption>哄哄我 · 六种哄法</figcaption></figure>
+<figure id="g-window"><div class="shot"><span class="pic"><img src="assets/games/window-zh.webp" width="400" height="870" loading="lazy" alt="我现在谁都不想听：火车窗外，春天的田野和湖"></span><i class="cn tl"></i><i class="cn br"></i></div><figcaption>1.3.0 · 我现在谁都不想听，变成火车窗</figcaption></figure>
+<ul class="ways">
+<li id="g-dance"><i>01</i><b>给我蹦迪</b><span>左！右！甩！再来！放首歌，跟着拍子蹦；想听哪首点哪首。</span></li>
+<li><i>02</i><b>娘娘息怒</b><span>扇风、奉茶、退朝</span></li>
+<li><i>03</i><b>不值得</b><span>酷飒靓姐保护心情</span></li>
+<li><i>04</i><b>管他呢</b><span>关我屁事节能模式</span></li>
+<li><i>05</i><b>发疯模式</b><span>发疯文学随机发牌</span></li>
+<li><i>06</i><b>我现在谁都不想听</b><span>一扇火车窗，窗外从早到晚、从春到冬轮着换。安静陪着，不多嘴。</span></li>
+</ul>
+</div>
+</section>
+
+<section class="sec" id="more" aria-labelledby="more-h">
+<div class="shead stack"><p class="tag"><span class="dia">◆</span>Extra<span class="sep">/</span>不玩的时候</p><h2 id="more-h">不玩的时候</h2></div>
+<div class="extras">
+<article class="extra"><p class="idx">+01</p><h3>写下来，先别发</h3><p>气头上想说的话，先写给自己看，存进日历。本来想发给谁的，可以顺手选个冷静时间（5、10 或 30 分钟），到点了再决定还发不发。不气了没有发送功能，一句都不会替你发出去。</p></article>
+<article class="extra"><p class="idx">+02</p><h3>消气日历</h3><p>记的不是这个月生了几次气，而是你把自己拉回来了几次。缓过来的那天挂一位值班专员；晚上 6 点后没人惹你，可以盖一枚晴天章；月底还有一张奖状。没有连续打卡。</p></article>
+<article class="extra"><p class="idx">+03</p><h3>怒气账单</h3><p>一轮结束，给这件破事留个案底：点几下「犯了什么事」，想补一句就补一句。每个月出一张账单，能存成图。</p></article>
+<article class="extra"><p class="idx">+04</p><h3>专员图鉴</h3><p>见过的值班专员都收在这里，还有节日限定章和几个隐藏款。隐藏款得自己撞见。</p></article>
+<article class="extra"><p class="idx">+05</p><h3>三个测验</h3><p>不气的时候玩：生气天气、吵架职业、恋爱依恋，结果能存成图。都是拿来玩的，不是心理测评。</p></article>
+<article class="extra"><p class="idx">+06</p><h3>哄她版</h3><p>轮到你去哄人的时候，首页可以切到「哄她版」。</p></article>
+</div>
+</section>
+
+<p class="after">想看每一版加了什么，翻<a href="changelog.html">更新记录</a>；怎么用、数据存在哪里，见<a href="support.html">使用与支持</a>。</p>
+<div class="sec" style="padding-top:28px"><div class="ctas"><a class="btn" href="https://apps.apple.com/cn/app/id6809241933">App Store 免费下载 <span aria-hidden="true">↗</span></a><span class="note">免费 · 无广告 · 不用注册 · 写的不上传</span></div></div>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="页脚">
+    <a href="features.html">玩法</a>
+    <a href="changelog.html">更新记录</a>
+    <a href="support.html">使用与支持</a>
+    <a href="privacy.html">隐私政策</a>
+    <a href="terms.html">使用条款</a>
+    <a href="en/features.html" hreflang="en" lang="en">English</a>
+  </nav>
+  <div class="foot-meta">
+    <span>联系 <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">鲁ICP备2026055416号-2</a>
+    <!-- 公安联网备案号下发后加在这里，下发前不得展示（README「已知还没做的」）。 -->
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>

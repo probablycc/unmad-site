@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="x-default" href="https://unmad.cn/en/terms.html">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<meta name="theme-color" content="#FFF4DD">
+<meta name="theme-color" content="#FBF6EC">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Unmad">
 <meta property="og:title" content="Terms of Use · Unmad">
@@ -23,143 +23,108 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<style>
-:root {
-  --cream: #FFF4DD;
-  --paper: #FFFCF4;
-  --ink: #21180F;
-  --muted: #6B5B48;
-  --orange: #FF9D2E;
-  --red: #EF4136;
-  --yellow: #FFD84D;
-  --line: #21180F;
-  color-scheme: light;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--ink);
-  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-        Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-}
-.wrap { max-width: 680px; margin: 0 auto; padding: 40px 20px 72px; }
-header { margin-bottom: 32px; }
-.mark {
-  display: inline-block; padding: 6px 14px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--orange); font-weight: 800; letter-spacing: .02em;
-  box-shadow: 3px 3px 0 var(--line); color: var(--ink); text-decoration: none;
-}
-.mark:hover { color: var(--ink); }
-h1 { font-size: 28px; font-weight: 800; margin: 24px 0 6px; letter-spacing: -.01em; }
-.sub { color: var(--muted); margin: 0; font-size: 14px; }
-.cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0; }
-.store {
-  display: inline-block; padding: 10px 20px; border: 2.5px solid var(--line);
-  border-radius: 999px; background: var(--yellow); color: var(--ink);
-  font-weight: 800; font-size: 15px; box-shadow: 4px 4px 0 var(--line);
-  text-decoration: none;
-}
-.store:hover {
-  background: var(--orange); color: var(--ink);
-  transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--line);
-}
-.cta-note { font-size: 13px; color: var(--muted); }
-main {
-  background: var(--paper); border: 2.5px solid var(--line); border-radius: 18px;
-  padding: 28px 24px; box-shadow: 5px 5px 0 var(--line);
-}
-h2 { font-size: 18px; font-weight: 800; margin: 30px 0 8px; }
-h2:first-child { margin-top: 0; }
-p { margin: 0 0 14px; }
-ul { margin: 0 0 14px; padding-left: 22px; }
-li { margin-bottom: 6px; }
-a { color: var(--ink); text-decoration-thickness: 2px; text-underline-offset: 3px; }
-a:hover { color: var(--orange); }
-hr { border: 0; border-top: 2px dashed rgba(33,24,15,.25); margin: 30px 0; }
-footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: 13px; }
-footer p { margin: 0 0 6px; }
-footer p:last-child { margin-bottom: 0; }
-@media (max-width: 480px) {
-  .wrap { padding: 28px 14px 56px; }
-  main { padding: 22px 18px; box-shadow: 4px 4px 0 var(--line); }
-  h1 { font-size: 24px; }
-}
-</style>
+<link rel="stylesheet" href="../assets/unmad.css?v=1">
+<script src="../assets/fx.js?v=1" defer></script>
 </head>
 <body>
-<div class="wrap">
-<header>
-    <a class="mark" href="./">Unmad</a>
-    <h1>Terms of use</h1>
-    <p class="sub">Last updated October 2026 · applies to v1.2.0</p>
-  </header>
 
-  <main>
-    <h2>The short version</h2>
-    <p>Unmad is free, needs no account and collects no personal information. Use it to blow off steam, not as medical help. It’s provided as is. What you write is yours and stays on your phone.</p>
+<header class="nav wrap">
+  <a class="brand" href="./" aria-label="Unmad home"><b>UN<i>MAD</i></b><span>不气了</span></a>
+  <nav class="nav-links" aria-label="Site">
+    <a href="./#room">Smash Room</a>
+    <a href="features.html">Games</a>
+    <a href="changelog.html">What’s new</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Help</a>
+  </nav>
+  <div class="nav-act">
+    <a class="lang" href="../terms.html" hreflang="zh-Hans" lang="zh-Hans">中文 ↗</a>
+    <a class="get" href="https://apps.apple.com/app/id6809241933">Get the app ↗</a>
+  </div>
+</header>
 
-    <h2>Who makes it</h2>
-    <p>Unmad (不气了 in Chinese) is made by Yuan Zhao, an independent developer. In these terms, “we” and “us” means the developer, and “you” means you. Contact: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
+<header class="phead wrap">
+  <p class="tag"><span class="dia">◆</span>Unmad<span class="sep">/</span>Terms</p>
+  <h1>Terms of use</h1>
+  <p class="sub">Last updated October 2026 · applies to v1.2.0</p>
+</header>
 
-    <h2>Agreeing to these terms</h2>
-    <p>By downloading or using Unmad, or by using this website, you agree to these terms. If you don’t agree, please don’t use them.</p>
-    <p>You get Unmad through Apple’s App Store, so Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> (the standard EULA) applies to the app as well. These terms add to it. If the two ever disagree about the app, the Apple EULA wins.</p>
+<main class="doc wrap">
+<div class="sheet">
+<h2>The short version</h2>
+  <p>Unmad is free, needs no account and collects no personal information. Use it to blow off steam, not as medical help. It’s provided as is. What you write is yours and stays on your phone.</p>
 
-    <h2>Price</h2>
-    <p>Unmad is free. There are no in-app purchases, no subscriptions and no ads. If that ever changes, it will be clearly marked in the App Store and in the app before you pay for anything.</p>
+  <h2>Who makes it</h2>
+  <p>Unmad (不气了 in Chinese) is made by Yuan Zhao, an independent developer. In these terms, “we” and “us” means the developer, and “you” means you. Contact: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
 
-    <h2>Using the app</h2>
-    <ul>
-      <li>You can use Unmad for your own personal, non-commercial use on Apple devices you own or control, as the App Store rules allow.</li>
-      <li>Please don’t copy, resell or redistribute the app, and don’t reverse engineer it except where the law says you’re allowed to.</li>
-      <li>Unmad’s name, characters, artwork, music, sounds and writing belong to us or are used under license. Please don’t use them in your own products or videos for sale without asking us first. Sharing a screenshot or your saved rage receipt for fun is fine.</li>
-      <li>Unmad isn’t directed at children under 13.</li>
-    </ul>
+  <h2>Agreeing to these terms</h2>
+  <p>By downloading or using Unmad, or by using this website, you agree to these terms. If you don’t agree, please don’t use them.</p>
+  <p>You get Unmad through Apple’s App Store, so Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> (the standard EULA) applies to the app as well. These terms add to it. If the two ever disagree about the app, the Apple EULA wins.</p>
 
-    <h2>What you write</h2>
-    <p>Everything you write or record in Unmad belongs to you and stays on your device. We never receive it and keep no copy. That also means we can’t recover it if you delete it, delete the app or lose your phone, and it isn’t included in iCloud or computer backups. See the <a href="privacy.html">privacy policy</a> for the details.</p>
-    <p>You’re responsible for what you write and for anything you choose to share from the app, such as a saved rage receipt image.</p>
+  <h2>Price</h2>
+  <p>Unmad is free. There are no in-app purchases, no subscriptions and no ads. If that ever changes, it will be clearly marked in the App Store and in the app before you pay for anything.</p>
 
-    <h2>Not a medical service</h2>
-    <p>Unmad is for letting off steam. It is not counseling, not a medical service and not a substitute for professional help. It does not assess, diagnose or treat any condition, and the quizzes in the Chinese version are just for fun. If you need professional help, please contact a professional. If you are thinking about hurting yourself, please contact your local emergency services or a crisis line right away.</p>
+  <h2>Using the app</h2>
+  <ul>
+    <li>You can use Unmad for your own personal, non-commercial use on Apple devices you own or control, as the App Store rules allow.</li>
+    <li>Please don’t copy, resell or redistribute the app, and don’t reverse engineer it except where the law says you’re allowed to.</li>
+    <li>Unmad’s name, characters, artwork, music, sounds and writing belong to us or are used under license. Please don’t use them in your own products or videos for sale without asking us first. Sharing a screenshot or your saved rage receipt for fun is fine.</li>
+    <li>Unmad isn’t directed at children under 13.</li>
+  </ul>
 
-    <h2>Use some common sense</h2>
-    <p>The smashing happens on screen. Please keep it there, and don’t take it out on real objects or people. Unmad plays sounds and vibrates, so don’t use it while driving or anywhere you need your full attention. You can turn sound and vibration off under Me.</p>
+  <h2>What you write</h2>
+  <p>Everything you write or record in Unmad belongs to you and stays on your device. We never receive it and keep no copy. That also means we can’t recover it if you delete it, delete the app or lose your phone, and it isn’t included in iCloud or computer backups. See the <a href="privacy.html">privacy policy</a> for the details.</p>
+  <p>You’re responsible for what you write and for anything you choose to share from the app, such as a saved rage receipt image.</p>
 
-    <h2>Changes and availability</h2>
-    <p>We may update Unmad, change or remove features, or stop offering it at any time. Updates come through the App Store, and the release notes say what changed.</p>
+  <h2>Not a medical service</h2>
+  <p>Unmad is for letting off steam. It is not counseling, not a medical service and not a substitute for professional help. It does not assess, diagnose or treat any condition, and the quizzes in the Chinese version are just for fun. If you need professional help, please contact a professional. If you are thinking about hurting yourself, please contact your local emergency services or a crisis line right away.</p>
 
-    <h2>No warranty</h2>
-    <p>Unmad and this website are provided “as is” and “as available”. To the fullest extent the law allows, we make no promises of any kind about them, including that they’ll work without interruption or errors, or that they’ll make you any less angry.</p>
+  <h2>Use some common sense</h2>
+  <p>The smashing happens on screen. Please keep it there, and don’t take it out on real objects or people. Unmad plays sounds and vibrates, so don’t use it while driving or anywhere you need your full attention. You can turn sound and vibration off under Me.</p>
 
-    <h2>Limits on liability</h2>
-    <p>To the fullest extent the law allows, we aren’t liable for any indirect, incidental, special or consequential loss, or for losing data stored on your device, arising from your use of Unmad or this website.</p>
-    <p>Nothing in these terms takes away rights you have under consumer law in your country that can’t be waived, or limits liability that can’t be limited by law.</p>
+  <h2>Changes and availability</h2>
+  <p>We may update Unmad, change or remove features, or stop offering it at any time. Updates come through the App Store, and the release notes say what changed.</p>
 
-    <h2>About Apple</h2>
-    <p>These terms are between you and us, not Apple. Apple isn’t responsible for Unmad or its content, and has no obligation to provide support for it. Questions, complaints or claims about the app go to us. Apple and its subsidiaries are third-party beneficiaries of these terms and can enforce them.</p>
+  <h2>No warranty</h2>
+  <p>Unmad and this website are provided “as is” and “as available”. To the fullest extent the law allows, we make no promises of any kind about them, including that they’ll work without interruption or errors, or that they’ll make you any less angry.</p>
 
-    <h2>This website</h2>
-    <p>This site is here to tell you what Unmad is and how to use it. It sets no cookies and runs no analytics or tracking scripts. Like any website, the hosting provider may keep standard server logs (such as IP address and the page requested) for security and operations. App Store links take you to Apple’s site, which has its own terms.</p>
+  <h2>Limits on liability</h2>
+  <p>To the fullest extent the law allows, we aren’t liable for any indirect, incidental, special or consequential loss, or for losing data stored on your device, arising from your use of Unmad or this website.</p>
+  <p>Nothing in these terms takes away rights you have under consumer law in your country that can’t be waived, or limits liability that can’t be limited by law.</p>
 
-    <h2>Changes to these terms</h2>
-    <p>If these terms change, we’ll update this page and the date at the top. If a change matters, the app’s release notes will mention it too. Using Unmad after a change means you accept the new terms.</p>
+  <h2>About Apple</h2>
+  <p>These terms are between you and us, not Apple. Apple isn’t responsible for Unmad or its content, and has no obligation to provide support for it. Questions, complaints or claims about the app go to us. Apple and its subsidiaries are third-party beneficiaries of these terms and can enforce them.</p>
 
-    <h2>Contact</h2>
-    <p>Questions about these terms: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
-    <hr>
-    <p class="cta">
-      <a class="store" href="https://apps.apple.com/app/id6809241933">Download on the App Store</a>
-      <span class="cta-note">Free · No in-app purchases · No account · Your words stay on your phone</span>
-    </p>
-  </main>
+  <h2>This website</h2>
+  <p>This site is here to tell you what Unmad is and how to use it. It sets no cookies and runs no analytics or tracking scripts. Like any website, the hosting provider may keep standard server logs (such as IP address and the page requested) for security and operations. App Store links take you to Apple’s site, which has its own terms.</p>
 
-  <footer>
-    <p><a href="./">Unmad</a> · <a href="support.html">Help &amp; support</a> · <a href="privacy.html">Privacy policy</a> · <a href="../terms.html" hreflang="zh-Hans" lang="zh-Hans">中文</a></p>
-    <p>Contact: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></p>
-    <p>© 2026 Yuan Zhao</p>
-  </footer></div>
+  <h2>Changes to these terms</h2>
+  <p>If these terms change, we’ll update this page and the date at the top. If a change matters, the app’s release notes will mention it too. Using Unmad after a change means you accept the new terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms: <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a>.</p>
+  <hr>
+  <p class="cta">
+    <a class="store" href="https://apps.apple.com/app/id6809241933">Download on the App Store</a>
+    <span class="cta-note">Free · No in-app purchases · No account · Your words stay on your phone</span>
+  </p>
+</div>
+</main>
+
+<footer class="foot wrap">
+  <nav aria-label="Footer">
+    <a href="features.html">Games</a>
+    <a href="changelog.html">What’s new</a>
+    <a href="support.html">Help &amp; support</a>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="../terms.html" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+  </nav>
+  <div class="foot-meta">
+    <span>Contact <a href="mailto:hellounmad1@gmail.com">hellounmad1@gmail.com</a></span>
+    <span>© 2026 Yuan Zhao</span>
+  </div>
+</footer>
+
 </body>
 </html>
