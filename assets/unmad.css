@@ -4,6 +4,7 @@
    （tools/fonts.py 按页面上的标题字现切，改了标题要重切），正文中文走系统字。 */
 
 @font-face { font-family: "Unmad Display"; src: url(fonts/noto-sc-900.woff2?v=1) format("woff2"); font-weight: 900; font-display: swap; unicode-range: U+2014, U+2026, U+3000-303F, U+3400-9FFF, U+FF00-FFEF; }
+@font-face { font-family: "Unmad Display TC"; src: url(fonts/noto-tc-900.woff2?v=1) format("woff2"); font-weight: 900; font-display: swap; unicode-range: U+2014, U+2026, U+3000-303F, U+3400-9FFF, U+FF00-FFEF; }
 @font-face { font-family: "Inter"; src: url(fonts/inter-latin.woff2) format("woff2"); font-weight: 400 900; font-display: swap; }
 @font-face { font-family: "JetBrains Mono"; src: url(fonts/jbmono-latin.woff2) format("woff2"); font-weight: 100 800; font-display: swap; }
 
@@ -23,6 +24,13 @@
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, "PingFang SC", "Microsoft YaHei", monospace;
   --spring: cubic-bezier(.3, 1.55, .5, 1);
   --out: cubic-bezier(.2, .8, .2, 1);
+}
+/* 繁体（zh-hant/ 下的页，和别处标了 lang="zh-Hant" 的字）：标题字换 Noto Sans TC 900 的子集，系统字先挑苹方 TC。
+   照上面写死「PingFang SC」的话，繁体字会画成大陆字形，逗号句号也靠左下、不居中。 */
+[lang|="zh-Hant"] {
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  --disp: "Inter", "Unmad Display TC", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, "PingFang TC", "Microsoft JhengHei", monospace;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
@@ -63,8 +71,10 @@ h1, h2, h3 { text-wrap: balance; }
 .nav-ind.on { opacity: 1; }
 .nav-links.hov .nav-ind { background: var(--red); }
 .nav-act { display: flex; align-items: center; gap: 12px; flex: none; }
-.nav-act .lang { font: 700 12px/1 var(--mono); text-decoration: none; opacity: .72; letter-spacing: .06em; padding: 8px 2px; }
-.nav-act .lang:hover { opacity: 1; }
+/* 语言：只列另外两种（简体页「繁 EN」、繁体页「简 EN」、英文页「简 繁」）。三个全列的话，375 宽的英文页、360 宽的中文页会把「获取 App」挤到第二行 */
+.nav-act .langs { display: flex; gap: 8px; }
+.nav-act .langs a { font: 700 12px/1 var(--mono); text-decoration: none; opacity: .72; letter-spacing: .06em; padding: 8px 2px; }
+.nav-act .langs a:hover { opacity: 1; }
 .nav-act .get { font: 800 13px/1 var(--sans); text-decoration: none; padding: 10px 15px; border-radius: 999px; white-space: nowrap; background: var(--ink); color: var(--cream); }
 .nav-act .get:hover { background: var(--red); color: var(--cream); }
 @media (max-width: 900px) {

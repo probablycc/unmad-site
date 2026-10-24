@@ -11,6 +11,8 @@
   var doc = document, root = doc.documentElement;
   var EN = (root.lang || '').slice(0, 2) === 'en';
   var T = EN ? { focus: 'FOCUS', close: 'Close', zoom: 'Enlarge screenshot: ' } : { focus: '对焦', close: '关闭', zoom: '放大看截图：' };
+  // 繁体页：store/site/tools/hant.mjs 从上面简体那份转出来写进来的，别手改
+  if (/^zh-Hant/i.test(root.lang)) T = /*hant*/{ focus: '對焦', close: '關閉', zoom: '放大看截圖：' }/*/hant*/;
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var noHover = matchMedia('(hover: none)').matches;
   var hasIO = 'IntersectionObserver' in window;

@@ -40,6 +40,28 @@ var T = EN ? {
   stuck: { aim: '筐里的，往上甩！', sweep: '搁板上，横着扫！', flip: '茶几，往上掀！', hammer: '砸！按住更狠。' },
   soundOn: '♪ 声音 开', soundOff: '♪ 声音 关', wf: .92, fk: 1
 };
+/* 繁体页（zh-hant/）：store/site/tools/hant.mjs 从上面简体那份转出来写在这一块里，别手改，改了简体重跑它 */
+if (/^zh-Hant/i.test(document.documentElement.lang)) T = /*hant*/{
+  names: { clock: ['掛鐘', '玻璃面'], plateA: ['青花盤', '瓷'], plateB: ['粉邊盤', '瓷'], mug: ['杯子', '瓷'], lamp: ['落地燈', '燈泡'], tv: ['電視', '螢幕'], table: ['茶几', '木頭'], vase: ['花瓶', '玻璃'], bowl: ['果盤', '玻璃'], plant: ['盆栽', '陶盆'], mirror: ['鏡子', '玻璃'], sofa: ['小沙發', '木架'], stool: ['小板凳', '木頭'] },
+  brk: { clock: '噹啷！', plateA: '啪嚓！', plateB: '啪嚓！', mug: '啪！', lamp: '啵！', tv: '滋啦！', table: '哐當！', vase: '嘩啦！', bowl: '啪嚓！', plant: '啪！', mirror: '嘩啦！', sofa: '咔嚓！', stool: '咔嚓！' },
+  hit: ['砰', '咚', '哐'],
+  tvHit: '滋——',
+  lampHit: '滋滋',
+  fullWall: '咚！',
+  fullItem: '哐！',
+  crate: '隨便扔',
+  wrecked: '已碎 · 補刀',
+  falling: '↓ 掉下去了',
+  broke: '✕ 碎了',
+  sweepWord: '嘩啦——',
+  flipWord: '掀桌！',
+  flipFace: '(╯°□°)╯︵ ┻━┻',
+  stuck: { aim: '筐裡的，往上甩！', sweep: '層板上，橫著掃！', flip: '茶几，往上掀！', hammer: '砸！按住更狠。' },
+  soundOn: '♪ 聲音 開',
+  soundOff: '♪ 聲音 關',
+  wf: 0.92,
+  fk: 1
+}/*/hant*/;
 
 /* ---------- 屋里的图（照 App 的 roomArt.generated.ts，屋里坐标） ---------- */
 var ART = {
